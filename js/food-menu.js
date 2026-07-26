@@ -66,6 +66,7 @@
     }
 
     toggleSection('foodDetailDescSection', 'foodDetailDescription', item.description);
+    toggleSection('foodDetailSourcingSection', 'foodDetailSourcing', item.sourcingNotes);
     toggleSection('foodDetailAllergiesSection', 'foodDetailAllergies', item.allergies);
     toggleSection('foodDetailSubsSection', 'foodDetailSubstitutions', item.substitutions);
 

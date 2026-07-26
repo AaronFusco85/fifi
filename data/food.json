@@ -140,7 +140,8 @@
       "category": "plats",
       "name": "Côte de boeuf, frites maison, poivrons marinés",
       "price": "MP",
-      "description": "We work with several beef purveyors — sizes and specs are communicated at lineup. Ribeye is seasoned with salt and pepper and seared in cast iron, then finished over charcoal and served with beef jus. Comes with fries. Feeds 3–4. Our purveyors include Flannery Beef (Sonoma, CA — Holstein, 14-day dry aged), Highland Hollow (Schoharie, NY — Angus, no aging needed), and Happy Valley (Central Pennsylvania — vintage beef from 5–7 year old dairy cows, aged about three weeks).",
+      "description": "Ribeye is seasoned with salt and pepper and seared in cast iron, then finished over charcoal and served with beef jus. Comes with fries. Feeds 3–4. Sizes and specs are communicated at lineup.",
+      "sourcingNotes": "We work with three beef purveyors and rotate between them depending on availability.\n\nFlannery Beef (Sonoma, CA) — Holstein, typically a 30–32 oz bone-in ribeye, dry-aged 14 days. Dry-aging lets the meat mature in a chilled, open-air environment, which intensifies flavor and tenderizes the cut.\n\nHighland Hollow (Schoharie, NY, in the Catskills) — Angus, grassy and beefy in flavor. Ribeye sizes vary since we're allocated one entire seven-bone rib from a single cow each week. Not aged — these cattle are young enough that aging isn't necessary; the meat is already tender and concentrated in flavor.\n\nHappy Valley (Central Pennsylvania) — \"vintage beef\" from breeding/dairy cows raised 5–7 years before slaughter, then aged about three weeks (a 21-day dry age), with the farm's own recommendation on when the beef should age further.",
       "allergies": "dairy, nightshade",
       "substitutions": "No dairy"
     },

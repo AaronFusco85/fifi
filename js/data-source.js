@@ -129,6 +129,7 @@ window.DataSource = (function () {
       name: (row.name || '').trim(),
       price: (row.price || '').trim(),
       description: (row.description || '').trim(),
+      sourcingNotes: (row.sourcingNotes || '').trim(),
       allergies: (row.allergies || '').trim(),
       substitutions: (row.substitutions || '').trim(),
       imageUrl: (row.imageUrl || '').trim()

@@ -682,6 +682,7 @@ main {
   font-size: 0.96rem;
   line-height: 1.55;
   color: var(--ink);
+  white-space: pre-line;
 }
 
 /* ---------- Menu download link ---------- */
