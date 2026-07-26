@@ -122,5 +122,48 @@ window.DataSource = (function () {
     return loadPromise;
   }
 
-  return { load };
+  function rowToFood(row) {
+    return {
+      id: (row.id || '').trim(),
+      category: (row.category || '').trim(),
+      name: (row.name || '').trim(),
+      price: (row.price || '').trim(),
+      description: (row.description || '').trim(),
+      allergies: (row.allergies || '').trim(),
+      substitutions: (row.substitutions || '').trim(),
+      imageUrl: (row.imageUrl || '').trim()
+    };
+  }
+
+  async function loadFoodFromSheets() {
+    const rows = await fetchCsv(window.FOOD_CSV_URL);
+    return { items: rows.map(rowToFood).filter(f => f.id) };
+  }
+
+  async function loadFoodFromLocalJson() {
+    const res = await fetch('data/food.json');
+    const data = await res.json();
+    return { items: data.items || [] };
+  }
+
+  let loadFoodPromise = null;
+
+  // Separate from load() on purpose — only the Food Menu page needs this
+  // data, so Menu/Flashcards/Map/Quiz don't pay for an extra fetch they
+  // don't use.
+  function loadFood() {
+    if (loadFoodPromise) return loadFoodPromise;
+
+    const sheetsReady = csvUrlConfigured(window.FOOD_CSV_URL);
+
+    loadFoodPromise = (sheetsReady ? loadFoodFromSheets() : loadFoodFromLocalJson())
+      .catch((err) => {
+        console.warn('[DataSource] Food Sheets load failed, falling back to local JSON:', err);
+        return loadFoodFromLocalJson();
+      });
+
+    return loadFoodPromise;
+  }
+
+  return { load, loadFood };
 })();

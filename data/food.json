@@ -1,0 +1,229 @@
+{
+  "items": [
+    {
+      "id": "d-01",
+      "category": "charcuterie",
+      "name": "Pâté de campagne, pork and chicken liver terrine",
+      "price": "$22",
+      "description": "Pork shoulder and chicken liver seasoned with onion, garlic, thyme, black and white pepper, chili flake, clove, nutmeg, juniper, egg, cognac, and cream. Browned, then baked low and slow in a water bath so it steams through, chilled, and sliced. Served with cornichons, Dijon mustard, and a carrot salad (raw carrot, Dijon, lemon juice, olive oil, chopped parsley).",
+      "allergies": "alcohol, dairy, egg, nightshade",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-02",
+      "category": "charcuterie",
+      "name": "Foie gras terrine maison, confit de figues à l'orange",
+      "price": "$54",
+      "description": "Hudson Valley foie gras is marinated overnight in salt, sugar, pepper, and Cognac, then molded into torchons, steamed, and pressed into terrines. Once chilled, it's sliced and plated with seasonal poached fruit — poached in white wine, sugar, water, cinnamon stick, cloves, and black pepper.",
+      "allergies": "alcohol, fruit (can be prepared without)",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-03",
+      "category": "charcuterie",
+      "name": "Saucisson sec, marinated olives",
+      "price": "$19",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-04",
+      "category": "entrees",
+      "name": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "price": "$34",
+      "description": "Bluefin tuna seasoned with Sarawak pepper and coriander, seared. Served with egg yolk, butter beans, fava beans, guindilla peppers, and olives, with a sauce verte made from parsley, chervil, and green garlic, topped with red mustard. Gluten-free and dairy-free.",
+      "allergies": "egg, nightshade",
+      "substitutions": "Can be prepared without egg"
+    },
+    {
+      "id": "d-05",
+      "category": "entrees",
+      "name": "Heirloom tomatoes, cucumbers, ajo blanco, basil",
+      "price": "$26",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-06",
+      "category": "entrees",
+      "name": "Endive, walnuts, apples, Fourme d'Ambert",
+      "price": "$28",
+      "description": "Red endive seasoned with lemon zest, lemon juice, olive oil, Chardonnay vinegar, and green apple juice. Walnuts are toasted in olive oil and honey, then tossed with Asian pear, mint, and Fourme d'Ambert — a rich, creamy cow's milk blue cheese from the Auvergne region of France.",
+      "allergies": "dairy, tree nuts",
+      "substitutions": "No dairy, no nuts, no honey"
+    },
+    {
+      "id": "d-07",
+      "category": "entrees",
+      "name": "Asperges vertes grillées, sauce gribiche",
+      "price": "$21",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-08",
+      "category": "entrees",
+      "name": "Tartare de boeuf Classique",
+      "price": "$29",
+      "description": "Beef is from Happy Valley in Pennsylvania. Sirloin is hand-chopped and mixed with sea salt, chili flake, espelette, Worcestershire, olive oil, shallot, capers, chives, lemon zest, lemon juice, red wine vinegar, Dijon mustard, and egg yolk. Served with housemade potato chips.",
+      "allergies": "fish (Worcestershire), allium, nightshade, raw egg",
+      "substitutions": "No fish, no allium, no nightshade, no raw egg"
+    },
+    {
+      "id": "d-09",
+      "category": "entrees",
+      "name": "Txangurro, Basque deviled crab",
+      "price": "$36",
+      "description": "Jonah crab from Maine is picked from the shell and cooked with onion, leek, shallot, tomato paste, tomatoes, white wine, chili flake, pimentón, and fish stock. Finished with fromage blanc, butter, chives, and breadcrumbs, served with crostini.",
+      "allergies": "allium, shellfish, alcohol, dairy, gluten, nightshade",
+      "substitutions": "No gluten, no dairy"
+    },
+    {
+      "id": "d-10",
+      "category": "entrees",
+      "name": "Tomate farcie à la Provençal",
+      "price": "$25",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-11",
+      "category": "entrees",
+      "name": "Omelette à plat, Maine lobster, bisque",
+      "price": "$35",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-12",
+      "category": "plats",
+      "name": "Red snapper, market lettuces, petit pois, chanterelles",
+      "price": "$59",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-13",
+      "category": "plats",
+      "name": "Filet mignon au poivre, frites maison",
+      "price": "$74",
+      "description": "Beef is from Highland Hollow in Schoharie, New York. A 7 oz filet mignon is cooked medium rare (other temperatures available up to medium well). The sauce is made with shallot, Cognac, meat jus, cream, Dijon mustard, ground black and green peppercorn, butter, and Worcestershire. Comes with frites.",
+      "allergies": "dairy, alcohol, allium, fish (Worcestershire)",
+      "substitutions": "No dairy, no alcohol, no allium, no fish"
+    },
+    {
+      "id": "d-14",
+      "category": "plats",
+      "name": "Poulet rôti, pommes Fifi, salade verte",
+      "price": "$78 (+$30 au foie gras)",
+      "description": "Golden chickens (PA) are air-dried in the fridge for 48 hours, salted, and rubbed on the cavity with crushed garlic, olive oil, black pepper, thyme, rosemary, marjoram, and herbes de Provence. Roasted and continually brushed with foie fat on the skin. The sauce is chicken jus, foie gras, and Cabernet vinegar. Served carved into boneless sliced breast, thigh, drumstick, and wing, with pommes Fifi and salade verte.",
+      "allergies": "alcohol, dairy, allium",
+      "substitutions": "No foie, no butter; pommes Fifi can be swapped for frites"
+    },
+    {
+      "id": "d-15",
+      "category": "plats",
+      "name": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "price": "MP",
+      "description": "Wild Portuguese Dover sole has a more muscular texture than farm-raised sole. Dredged in flour and seared on the plancha on both sides until golden. A sauce is made with shallot, white wine, chicken stock, a touch of brown butter, capers, parsley, and lemon juice. Served deboned, sauced with a poireaux vinaigrette of blanched leeks, Dijon, red wine vinegar, lemon juice, and olive oil. Feeds 3–4.",
+      "allergies": "fish, dairy, alcohol, gluten, allium",
+      "substitutions": "No dairy, gluten-free, pescatarian"
+    },
+    {
+      "id": "d-16",
+      "category": "plats",
+      "name": "Côte de boeuf, frites maison, poivrons marinés",
+      "price": "MP",
+      "description": "We work with several beef purveyors — sizes and specs are communicated at lineup. Ribeye is seasoned with salt and pepper and seared in cast iron, then finished over charcoal and served with beef jus. Comes with fries. Feeds 3–4. Our purveyors include Flannery Beef (Sonoma, CA — Holstein, 14-day dry aged), Highland Hollow (Schoharie, NY — Angus, no aging needed), and Happy Valley (Central Pennsylvania — vintage beef from 5–7 year old dairy cows, aged about three weeks).",
+      "allergies": "dairy, nightshade",
+      "substitutions": "No dairy"
+    },
+    {
+      "id": "d-17",
+      "category": "accompagnements",
+      "name": "Salade verte",
+      "price": "$14",
+      "description": "Greens are dressed with sea salt, lemon juice, lemon zest, olive oil, Dijon mustard, and Chardonnay vinegar, tossed with shallot, parsley, chives, and tarragon.",
+      "allergies": "allium",
+      "substitutions": "No allium"
+    },
+    {
+      "id": "d-18",
+      "category": "accompagnements",
+      "name": "String beans amandine",
+      "price": "$17",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-19",
+      "category": "accompagnements",
+      "name": "Pommes Fifi",
+      "price": "$16",
+      "description": "Potatoes are boiled, then fried, and tossed in garlic parsley butter.",
+      "allergies": "dairy, allium",
+      "substitutions": "No dairy, no allium"
+    },
+    {
+      "id": "d-20",
+      "category": "accompagnements",
+      "name": "Frites maison",
+      "price": "$14 (+$30 au Osetra caviar)",
+      "description": "Potatoes are cut, soaked, blanched, and fried until crisp, seasoned with sea salt. Gluten-free.",
+      "allergies": "None",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-21",
+      "category": "desserts",
+      "name": "Assiette de fromage",
+      "price": "$38",
+      "description": "",
+      "allergies": "",
+      "substitutions": ""
+    },
+    {
+      "id": "d-22",
+      "category": "desserts",
+      "name": "Crème brûlée",
+      "price": "$14",
+      "description": "Cream, sugar, salt, vanilla bean, and eggs are mixed and set into gratins. The custard is cooked, chilled, and bruléed with sugar on top.",
+      "allergies": "dairy, egg",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-23",
+      "category": "desserts",
+      "name": "Fromage blanc ice cream",
+      "price": "$13",
+      "description": "Ice cream made from milk, sugar, salt, and fromage blanc. Served as two quenelles with huckleberry jus — the huckleberries are from Oregon.",
+      "allergies": "dairy",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-24",
+      "category": "desserts",
+      "name": "Chocolate mousse, chantilly",
+      "price": "$16",
+      "description": "A dark chocolate ganache is made by melting chocolate, milk, sugar, and egg yolk. A meringue is beaten and folded into the ganache. A large scoop is served alongside chantilly cream, topped with shaved dark chocolate.",
+      "allergies": "dairy, egg",
+      "substitutions": "None"
+    },
+    {
+      "id": "d-25",
+      "category": "desserts",
+      "name": "Baba au rhum",
+      "price": "$18",
+      "description": "Brioche cakes are soaked in a rum syrup until moist, served with diplomat cream (whipped cream and pastry cream) piped inside, with syrup around and a pineapple jam surprise inside. Served with a bottle of Barbancourt 15-year on the table.",
+      "allergies": "gluten, alcohol, dairy",
+      "substitutions": "None"
+    }
+  ]
+}

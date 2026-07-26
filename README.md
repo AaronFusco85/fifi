@@ -1,29 +1,33 @@
 # Chez Fifi — Staff Wine Program Site
 
-A simple internal training site: an interactive beverage menu, flashcards, and
-an interactive wine region map. Content lives in a **Google Sheet** — no
-GitHub, no code, no JSON editing needed for day-to-day wine list changes.
+A simple internal training site: an interactive beverage menu, a food menu,
+flashcards, and an interactive wine region map. Content lives in a **Google
+Sheet** — no GitHub, no code, no JSON editing needed for day-to-day changes.
 
 ## What's here
 
 ```
 index.html              Home page
-flashcards.html          Flashcard study tool
 menu.html                Interactive beverage menu
+food-menu.html           Food menu (descriptions, allergies, substitutions)
+flashcards.html          Flashcard study tool
 maps.html                Interactive wine region map
+team-quiz.html           Bonus "Match the Wine to the Team" game
 css/style.css            All styling
 js/config.js              Your Google Maps key + Google Sheets links go here
 js/data-source.js         Loads content from Sheets (falls back to data/ JSON)
 js/                        Everything else — page logic, shouldn't need to touch
 data/                      Local fallback copies (used only if Sheets is unreachable)
 resources/pdfs/            The downloadable BTG packet PDF lives here
+resources/images/          Bottle/dish photos live here
 ```
 
 ## How content works now
 
-The site reads from two tabs in a Google Sheet: **Wines** and **Flashcards**.
-Edit a cell in the Sheet, and — usually within a few minutes — the live site
-reflects it. No file to edit, no upload, no GitHub for content changes.
+The site reads from three tabs in a Google Sheet: **Wines**, **Flashcards**,
+and **Food**. Edit a cell in the Sheet, and — usually within a few minutes —
+the live site reflects it. No file to edit, no upload, no GitHub for content
+changes.
 
 The one exception is the **downloadable PDF packet**, which is a static file
 and does need to be regenerated and re-uploaded when the wine list changes
@@ -31,21 +35,20 @@ and does need to be regenerated and re-uploaded when the wine list changes
 
 ## One-time setup: the Google Sheet
 
-1. Create a new Google Sheet. Rename the two default tabs (or add two tabs)
-   called exactly `Wines` and `Flashcards`.
-2. ✅ *Already done* — the Sheet was originally seeded from a one-time CSV
+1. Create a new Google Sheet with three tabs, named exactly `Wines`,
+   `Flashcards`, and `Food`.
+2. ✅ *Wines and Flashcards are already done* — seeded from a one-time CSV
    export of the site's starting content, imported via File → Import →
-   Upload. Those CSV files aren't part of this repo (they were only needed
-   for that first import) — if you ever need a fresh starter export again
-   (e.g. setting up a second Sheet), just ask Claude to regenerate one from
-   the current `data/*.json` files or the live Sheet.
+   Upload. For the new `Food` tab, ask Claude for a starter CSV the same
+   way and import it the same way.
 3. For **each** tab: File → Share → **Publish to web** → select that specific
    sheet (not "Entire document") → format **Comma-separated values (.csv)** →
    Publish. Copy the URL it gives you.
-4. Open `js/config.js` and paste the two URLs in:
+4. Open `js/config.js` and paste the URLs in:
    ```js
    self.WINES_CSV_URL = "your Wines tab CSV URL";
    self.FLASHCARDS_CSV_URL = "your Flashcards tab CSV URL";
+   self.FOOD_CSV_URL = "your Food tab CSV URL";
    ```
 5. Save and upload `js/config.js` to GitHub. The site will start reading
    from the Sheet instead of the bundled local files.
@@ -67,7 +70,7 @@ you wouldn't want a guest to stumble onto if the link ever got out.
 | `tastingNotes`, `wineryProfile`, `farmingWinemaking`, `aboutCuvee`, `vintageDetails` | The five sections shown when a server clicks into the wine |
 | `lat`, `lng` | The wine region's coordinates (right-click the spot on Google Maps to copy them) |
 | `pinLabel` | The map pin's name, e.g. `Sauternes, Bordeaux`. **To share a pin with another wine** (like the two Sauternes bottles do), copy that wine's `pinLabel`, `lat`, and `lng` *exactly* — matching label is what groups wines onto the same pin. |
-| `imageUrl` | A direct link to a bottle photo (right-click an image online → "Copy Image Address" — needs to end in something like `.jpg` or `.png`, not a link to the webpage it's on). Leave blank and the card just shows without a photo, no broken-image icon. |
+| `imageUrl` | A relative path to a photo stored in this repo, e.g. `resources/images/m-01.jpg` — not a link to another website (see "A note on bottle photos" below). Leave blank and the card just shows without a photo, no broken-image icon. |
 
 ### Flashcards tab
 
@@ -82,18 +85,42 @@ Each wine needs **exactly 4 rows** (one per difficulty).
 | `question`, `answer` | The card content |
 | `q` | `1` = Easy, `2` or `3` = Medium, `4` = Hard |
 
+### Food tab
+
+Powers the Food Menu page (descriptions only, no flashcards/quiz for food).
+
+| Column | What goes here |
+|---|---|
+| `id` | Unique ID, e.g. `d-26` for the next new dish |
+| `category` | One of: `charcuterie`, `entrees`, `plats`, `accompagnements`, `desserts` |
+| `name` | Dish name as shown on the printed menu |
+| `price` | Text field — handles `$25`, `MP`, or `$78 (+$30 au foie gras)` equally well |
+| `description` | How it's made — shown under "How It's Made" when clicked into |
+| `allergies`, `substitutions` | Shown as their own sections. Leave either blank and that section just doesn't appear — no empty "Allergies:" line |
+| `imageUrl` | Same as wine photos — a relative path like `resources/images/d-01.jpg`, not a link to another site |
+
+Leaving `description`/`allergies`/`substitutions` blank for a dish is fine —
+the card still shows on the Food Menu with just its name and price, and the
+detail view simply skips whichever sections have nothing in them.
+
 ### A note on bottle photos
 
-Since `imageUrl` just links to an image hosted somewhere else, two things
-are worth knowing:
+Photos live in this repo, in `resources/images/`, rather than being linked
+from other websites — hotlinking from producer/retailer sites turned out to
+be unreliable (many block it), so this is the durable option. This applies
+to food photos too, if you add any later.
 
-- **Some sites block "hotlinking"** (showing their image on someone else's
-  page) — if a photo doesn't show up, that's the most likely reason. A
-  producer's own site or a retailer that doesn't block this usually works
-  fine; if one link doesn't work, try another source for that bottle.
-- **They're cached for offline use automatically**, same as everything
-  else on the site — once a photo has loaded for someone, it'll keep
-  showing up for them even without a connection.
+**To add a photo:**
+1. Get the image file (ask Claude to prep it from whatever you have, or do
+   it yourself — a reasonable size is under ~500KB, roughly 800px on the
+   long edge).
+2. Upload it into `resources/images/` in this repo. A clear filename like
+   `m-01.jpg` (matching the wine's `id`) keeps things easy to manage.
+3. In the Sheet, set that wine's `imageUrl` to the relative path, e.g.
+   `resources/images/m-01.jpg` — not a full `https://` link.
+
+Since the image is served from this same site, it's cached for offline use
+automatically, same as everything else.
 
 ## Workflows
 

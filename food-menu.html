@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Menu — Chez Fifi</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://docs.google.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="css/style.css?v=31">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">Chez Fifi</span>
+    <span class="brand-sub">Staff Wine Program</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Beverage Menu</a>
+    <a href="food-menu.html" class="active">Food Menu</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="maps.html">Wine Map</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-eyebrow">02 — Reference</div>
+  <h1 class="page-title">Food Menu</h1>
+  <p class="page-lede">Click any dish for the full detail a guest might ask about — how it's made, allergies, and substitutions.</p>
+
+  <div class="deck-controls">
+    <div class="filter-row" id="foodFilterRow">
+      <button class="filter-chip active" data-filter="all">All</button>
+    </div>
+  </div>
+
+  <div class="menu-grid" id="foodGrid"></div>
+</main>
+
+<div class="detail-overlay" id="foodDetailOverlay" hidden>
+  <div class="detail-card">
+    <button class="detail-close" id="foodDetailClose" aria-label="Close">×</button>
+    <div class="detail-header">
+      <img class="detail-photo" id="foodDetailPhoto" src="" alt="" onerror="this.style.display='none'">
+      <div class="detail-header-text">
+        <span class="tag" id="foodDetailTag"></span>
+        <h2 id="foodDetailName"></h2>
+        <div class="detail-producer" id="foodDetailPrice"></div>
+      </div>
+    </div>
+
+    <div class="detail-section" id="foodDetailDescSection">
+      <div class="detail-section-label">How It's Made</div>
+      <p id="foodDetailDescription"></p>
+    </div>
+    <div class="detail-section" id="foodDetailAllergiesSection">
+      <div class="detail-section-label">Allergies</div>
+      <p id="foodDetailAllergies"></p>
+    </div>
+    <div class="detail-section" id="foodDetailSubsSection">
+      <div class="detail-section-label">Substitutions</div>
+      <p id="foodDetailSubstitutions"></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">CHEZ FIFI — INTERNAL STAFF RESOURCE — NOT FOR GUEST USE</footer>
+
+<script src="js/config.js?v=18"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.5.4/papaparse.min.js"></script>
+<script src="js/data-source.js?v=19"></script>
+<script src="js/food-menu.js?v=1"></script>
+<script src="js/sw-register.js"></script>
+</body>
+</html>

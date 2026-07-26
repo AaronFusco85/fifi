@@ -244,6 +244,12 @@ main {
 .tag-sparkling { background: #3d5a68; }
 .tag-dessert   { background: #7a4a1f; }
 
+.tag-charcuterie     { background: #7a2436; }
+.tag-entrees         { background: #3d5a45; }
+.tag-plats           { background: #6b4423; }
+.tag-accompagnements { background: #3d5a68; }
+.tag-desserts        { background: #6b5a1f; }
+
 .filter-block {
   margin-bottom: 18px;
 }
