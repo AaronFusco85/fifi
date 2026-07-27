@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chez Fifi — Staff Education Portal</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css?v=33">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">Chez Fifi</span>
+    <span class="brand-sub">Staff Education Portal</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Beverage Menu</a>
+    <a href="food-menu.html">Food Menu</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="maps.html">Wine Map</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <div class="hero-eyebrow">Front of House · Staff Education</div>
+      <h1>Everything you need to succeed at Chez Fifi.</h1>
+      <p>Reference the beverage menu and the food menu, study with flashcards, and see where every bottle comes from — all in one place, built for the floor.</p>
+    </div>
+    <svg class="wine-fill" viewBox="0 0 240 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An illustration of a wine glass filling with wine">
+      <defs>
+        <clipPath id="glassClip">
+          <path d="M 66 46 L 174 46 C 174 96 160 150 120 165 C 80 150 66 96 66 46 Z"/>
+        </clipPath>
+      </defs>
+
+      <g clip-path="url(#glassClip)">
+        <rect id="wineFillRect" x="60" width="120" height="260" y="78" fill="var(--bordeaux-bright)">
+          <animate id="wineFillAnim" attributeName="y"
+            values="78;78;240;240;78"
+            keyTimes="0;0.22;0.55;0.75;1"
+            dur="7s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+
+      <ellipse cx="120" cy="44" rx="56" ry="9" fill="none" stroke="var(--paper)" stroke-width="2" opacity="0.6"/>
+      <path d="M 66 46 C 66 96 80 150 120 165 C 160 150 174 96 174 46" fill="none" stroke="var(--paper)" stroke-width="2.5"/>
+      <line x1="120" y1="165" x2="120" y2="230" stroke="var(--paper)" stroke-width="3"/>
+      <ellipse cx="120" cy="236" rx="32" ry="7" fill="none" stroke="var(--paper)" stroke-width="2.5"/>
+    </svg>
+  </section>
+
+  <section class="module-grid">
+    <a class="module-card" href="menu.html">
+      <span class="module-index">01 — Reference</span>
+      <h3>Beverage Menu</h3>
+      <p>Browse the full by-the-glass list by category, then click into any bottle for the detail a guest might ask about.</p>
+    </a>
+    <a class="module-card" href="food-menu.html">
+      <span class="module-index">02 — Reference</span>
+      <h3>Food Menu</h3>
+      <p>How every dish is made, plus allergies and substitutions — the detail a guest might ask about at the table.</p>
+    </a>
+    <a class="module-card" href="flashcards.html">
+      <span class="module-index">03 — Study</span>
+      <h3>Flashcards</h3>
+      <p>Quiz yourself on the wine list, the food menu, or both — pick a category and a difficulty and go.</p>
+    </a>
+    <a class="module-card" href="maps.html">
+      <span class="module-index">04 — Explore</span>
+      <h3>Wine Map</h3>
+      <p>See where every wine on the list actually comes from. Click a pin, then click through for the full story.</p>
+    </a>
+  </section>
+</main>
+
+<footer class="site-footer">CHEZ FIFI — INTERNAL STAFF RESOURCE — NOT FOR GUEST USE</footer>
+
+<script>
+  // SMIL animations don't read CSS media queries, so honor
+  // prefers-reduced-motion manually: stop the loop and hold a nicely
+  // filled glass instead.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var anim = document.getElementById('wineFillAnim');
+    var rect = document.getElementById('wineFillRect');
+    if (anim) anim.remove();
+    if (rect) rect.setAttribute('y', '90');
+  }
+</script>
+<script src="js/sw-register.js"></script>
+</body>
+</html>
