@@ -6,14 +6,20 @@
   const cardQuestion = document.getElementById('cardQuestion');
   const cardAnswer = document.getElementById('cardAnswer');
   const progressReadout = document.getElementById('progressReadout');
+  const domainFilterRow = document.getElementById('domainFilterRow');
   const typeFilterRow = document.getElementById('typeFilterRow');
+  const categoryFilterLabel = document.getElementById('categoryFilterLabel');
   const difficultyFilterRow = document.getElementById('difficultyFilterRow');
   const toggleOrderBtn = document.getElementById('toggleOrderBtn');
   const cardStage = document.querySelector('.card-stage');
 
+  const WINE_CATEGORIES = ['sparkling', 'white', 'rose', 'red', 'dessert'];
+  const FOOD_CATEGORIES = ['charcuterie', 'entrees', 'plats', 'accompagnements', 'desserts'];
+
   let deck = [];
   let filtered = [];
   let index = 0;
+  let selectedDomain = 'all';
   const selectedTypes = new Set();
   const selectedDifficulties = new Set();
   // Toggle cycles between 'shuffle' and 'difficulty'. The button label always
@@ -81,6 +87,8 @@
 
   function applyFilters() {
     let base = deck.slice();
+    if (selectedDomain === 'wine') base = base.filter(c => WINE_CATEGORIES.includes(c.category));
+    if (selectedDomain === 'food') base = base.filter(c => FOOD_CATEGORIES.includes(c.category));
     if (selectedTypes.size > 0) base = base.filter(c => selectedTypes.has(c.category));
     if (selectedDifficulties.size > 0) base = base.filter(c => selectedDifficulties.has(difficultyGroup(c.q)));
 
@@ -122,9 +130,21 @@
     });
   }
 
-  function buildTypeFilters() {
+  // Rebuilds the Category row to only show chips relevant to the current
+  // Wine/Food/All selection, so you're never picking through 10 mixed
+  // wine+food categories at once.
+  function buildCategoryFilters() {
+    typeFilterRow.innerHTML = '<button class="filter-chip active" data-filter="all">All</button>';
+    selectedTypes.clear();
+
     const order = ['sparkling', 'white', 'rose', 'red', 'dessert', 'charcuterie', 'entrees', 'plats', 'accompagnements', 'desserts'];
+    let available;
+    if (selectedDomain === 'wine') available = WINE_CATEGORIES;
+    else if (selectedDomain === 'food') available = FOOD_CATEGORIES;
+    else available = WINE_CATEGORIES.concat(FOOD_CATEGORIES);
+
     const cats = Array.from(new Set(deck.map(c => c.category)))
+      .filter(c => available.includes(c))
       .sort((a, b) => order.indexOf(a) - order.indexOf(b));
 
     cats.forEach(cat => {
@@ -135,7 +155,22 @@
       typeFilterRow.appendChild(btn);
     });
 
-    wireMultiSelectRow(typeFilterRow, selectedTypes);
+    categoryFilterLabel.textContent = selectedDomain === 'wine' ? 'Wine Category'
+      : selectedDomain === 'food' ? 'Food Category'
+      : 'Category';
+  }
+
+  function wireDomainRow() {
+    domainFilterRow.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-chip');
+      if (!btn) return;
+      domainFilterRow.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedDomain = btn.dataset.filter;
+      buildCategoryFilters();
+      wireMultiSelectRow(typeFilterRow, selectedTypes);
+      applyFilters();
+    });
   }
 
   function buildDifficultyFilters() {
@@ -178,12 +213,14 @@
     renderCard();
   });
 
+  let quizWineId = null;
+
   try {
     const data = await window.DataSource.load();
     deck = data.cards || [];
 
     const params = new URLSearchParams(window.location.search);
-    const quizWineId = params.get('wineId');
+    quizWineId = params.get('wineId');
 
     if (quizWineId) {
       // "Quiz Me" mode: just the 4 questions for one wine, in order
@@ -194,7 +231,9 @@
       toggleOrderBtn.textContent = 'Randomize';
       document.querySelectorAll('.filter-block').forEach(el => el.style.display = 'none');
     } else {
-      buildTypeFilters();
+      wireDomainRow();
+      buildCategoryFilters();
+      wireMultiSelectRow(typeFilterRow, selectedTypes);
       buildDifficultyFilters();
       applyFilters();
     }
