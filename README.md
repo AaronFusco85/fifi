@@ -1,4 +1,4 @@
-# Chez Fifi — Staff Wine Program Site
+# Chez Fifi — Staff Education Portal
 
 A simple internal training site: an interactive beverage menu, a food menu,
 flashcards, and an interactive wine region map. Content lives in a **Google

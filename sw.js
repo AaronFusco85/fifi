@@ -7,7 +7,7 @@ try {
   console.warn('[sw] Could not load config.js', err);
 }
 
-const CACHE_NAME = 'chez-fifi-cache-v10';
+const CACHE_NAME = 'chez-fifi-cache-v12';
 
 function sheetsUrlsConfigured() {
   return self.WINES_CSV_URL && !self.WINES_CSV_URL.startsWith('PASTE_')
@@ -32,10 +32,10 @@ const PRECACHE_URLS = [
   'data/flashcards.json',
   'data/regions.json',
   'resources/pdfs/BTG_Complete_Packet.pdf',
-  'favicon.svg',
-  'favicon-32.png',
-  'favicon-192.png',
-  'apple-touch-icon.png',
+  'favicon.svg?v=3',
+  'favicon-32.png?v=3',
+  'favicon-192.png?v=3',
+  'apple-touch-icon.png?v=3',
   'manifest.json'
 ];
 
