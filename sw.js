@@ -7,7 +7,7 @@ try {
   console.warn('[sw] Could not load config.js', err);
 }
 
-const CACHE_NAME = 'chez-fifi-cache-v9';
+const CACHE_NAME = 'chez-fifi-cache-v10';
 
 function sheetsUrlsConfigured() {
   return self.WINES_CSV_URL && !self.WINES_CSV_URL.startsWith('PASTE_')

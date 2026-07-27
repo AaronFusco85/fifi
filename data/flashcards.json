@@ -973,6 +973,618 @@
       "answer": "The de Vasconcelos family, who founded Vinhos Barbeito.",
       "q": 4,
       "wineId": "m-27"
+    },
+    {
+      "id": "f-109",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "What two meats form the base of the pâté de campagne?",
+      "answer": "Pork shoulder and chicken liver.",
+      "q": 1
+    },
+    {
+      "id": "f-110",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "Name four of the spices used to season the pâté.",
+      "answer": "Any four of: onion, garlic, thyme, black and white pepper, chili flake, clove, nutmeg, juniper.",
+      "q": 2
+    },
+    {
+      "id": "f-111",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "How is the pâté cooked?",
+      "answer": "Browned, then baked low and slow in a water bath so it steams through, then chilled and sliced.",
+      "q": 3
+    },
+    {
+      "id": "f-112",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "What is the pâté served with, and what's in the carrot salad?",
+      "answer": "Cornichons, Dijon mustard, and a carrot salad of raw carrot, Dijon, lemon juice, olive oil, and chopped parsley.",
+      "q": 4
+    },
+    {
+      "id": "f-113",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "Where does the foie gras come from?",
+      "answer": "Hudson Valley.",
+      "q": 1
+    },
+    {
+      "id": "f-114",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What is the foie gras marinated in overnight?",
+      "answer": "Salt, sugar, pepper, and Cognac.",
+      "q": 2
+    },
+    {
+      "id": "f-115",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What happens to the foie gras after marinating?",
+      "answer": "It's molded into torchons, steamed, pressed into terrines, then chilled and sliced.",
+      "q": 3
+    },
+    {
+      "id": "f-116",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What is the seasonal poached fruit poached in?",
+      "answer": "White wine, sugar, water, cinnamon stick, cloves, and black pepper.",
+      "q": 4
+    },
+    {
+      "id": "f-117",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What two spices season the seared bluefin tuna?",
+      "answer": "Sarawak pepper and coriander.",
+      "q": 1
+    },
+    {
+      "id": "f-118",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What beans are in the dish besides fava beans?",
+      "answer": "Butter beans.",
+      "q": 2
+    },
+    {
+      "id": "f-119",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What's in the sauce verte?",
+      "answer": "Parsley, chervil, and green garlic.",
+      "q": 3
+    },
+    {
+      "id": "f-120",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What is the dish topped with, and what are its dietary properties?",
+      "answer": "Topped with red mustard; it's gluten-free and dairy-free.",
+      "q": 4
+    },
+    {
+      "id": "f-121",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What color endive is used?",
+      "answer": "Red endive.",
+      "q": 1
+    },
+    {
+      "id": "f-122",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "How are the walnuts prepared?",
+      "answer": "Toasted in olive oil and honey.",
+      "q": 2
+    },
+    {
+      "id": "f-123",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What fruit besides apple is tossed into the salad?",
+      "answer": "Asian pear.",
+      "q": 3
+    },
+    {
+      "id": "f-124",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What is Fourme d'Ambert, and where is it from?",
+      "answer": "A rich, creamy cow's milk blue cheese from the Auvergne region of France.",
+      "q": 4
+    },
+    {
+      "id": "f-125",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "Where does the beef come from?",
+      "answer": "Happy Valley in Pennsylvania.",
+      "q": 1
+    },
+    {
+      "id": "f-126",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "What cut of beef is used?",
+      "answer": "Sirloin.",
+      "q": 2
+    },
+    {
+      "id": "f-127",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "Name four ingredients mixed into the hand-chopped beef.",
+      "answer": "Any four of: sea salt, chili flake, espelette, Worcestershire, olive oil, shallot, capers, chives, lemon zest, lemon juice, red wine vinegar, Dijon mustard, egg yolk.",
+      "q": 3
+    },
+    {
+      "id": "f-128",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "What is the tartare served with?",
+      "answer": "Housemade potato chips.",
+      "q": 4
+    },
+    {
+      "id": "f-129",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What kind of crab is used, and where is it from?",
+      "answer": "Jonah crab from Maine.",
+      "q": 1
+    },
+    {
+      "id": "f-130",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is the crab cooked with?",
+      "answer": "Onion, leek, shallot, tomato paste, tomatoes, white wine, chili flake, pimentón, and fish stock.",
+      "q": 2
+    },
+    {
+      "id": "f-131",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is the dish finished with?",
+      "answer": "Fromage blanc, butter, chives, and breadcrumbs.",
+      "q": 3
+    },
+    {
+      "id": "f-132",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is Txangurro served with?",
+      "answer": "Crostini.",
+      "q": 4
+    },
+    {
+      "id": "f-133",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "Where does the beef come from?",
+      "answer": "Highland Hollow in Schoharie, New York.",
+      "q": 1
+    },
+    {
+      "id": "f-134",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "What size is the filet, and what temperature is it cooked to?",
+      "answer": "7 oz, cooked medium rare (other temperatures available up to medium well).",
+      "q": 2
+    },
+    {
+      "id": "f-135",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "Name four ingredients in the sauce.",
+      "answer": "Any four of: shallot, Cognac, meat jus, cream, Dijon mustard, black and green peppercorn, butter, Worcestershire.",
+      "q": 3
+    },
+    {
+      "id": "f-136",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "What does the filet mignon come with?",
+      "answer": "Frites.",
+      "q": 4
+    },
+    {
+      "id": "f-137",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "Where do the chickens come from, and how are they prepped before cooking?",
+      "answer": "Golden chickens from Pennsylvania, air-dried in the fridge for 48 hours.",
+      "q": 1
+    },
+    {
+      "id": "f-138",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "What is the chicken cavity rubbed with?",
+      "answer": "Crushed garlic, olive oil, black pepper, thyme, rosemary, marjoram, and herbes de Provence.",
+      "q": 2
+    },
+    {
+      "id": "f-139",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "What are the chickens brushed with while roasting, and what's in the sauce?",
+      "answer": "Brushed with foie fat; the sauce is chicken jus, foie gras, and Cabernet vinegar.",
+      "q": 3
+    },
+    {
+      "id": "f-140",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "How is the chicken served, and what does it come with?",
+      "answer": "Carved into boneless sliced breast, thigh, drumstick, and wing, served with pommes Fifi and salade verte.",
+      "q": 4
+    },
+    {
+      "id": "f-141",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "Where is the Dover sole from, and how does it differ from farm-raised sole?",
+      "answer": "Wild Portuguese Dover sole, with a more muscular texture than farm-raised sole.",
+      "q": 1
+    },
+    {
+      "id": "f-142",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "How is the sole cooked?",
+      "answer": "Dredged in flour and seared on the plancha on both sides until golden.",
+      "q": 2
+    },
+    {
+      "id": "f-143",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "What's in the sauce?",
+      "answer": "Shallot, white wine, chicken stock, a touch of brown butter, capers, parsley, and lemon juice.",
+      "q": 3
+    },
+    {
+      "id": "f-144",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "What is the fish sauced with, and what's in it?",
+      "answer": "A poireaux vinaigrette made of blanched leeks, Dijon, red wine vinegar, lemon juice, and olive oil.",
+      "q": 4
+    },
+    {
+      "id": "f-145",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "How is the ribeye seasoned and cooked?",
+      "answer": "Seasoned with salt and pepper, seared in cast iron, then finished over charcoal.",
+      "q": 1
+    },
+    {
+      "id": "f-146",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "How many beef purveyors does Chez Fifi work with for this dish?",
+      "answer": "Three.",
+      "q": 2
+    },
+    {
+      "id": "f-147",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "Which purveyor supplies Holstein beef dry-aged 14 days?",
+      "answer": "Flannery Beef, in Sonoma, CA.",
+      "q": 3
+    },
+    {
+      "id": "f-148",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "What makes Happy Valley's beef \"vintage,\" and how is it aged?",
+      "answer": "It comes from breeding/dairy cows raised 5–7 years before slaughter, then aged about three weeks (a 21-day dry age).",
+      "q": 4
+    },
+    {
+      "id": "f-149",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What acid and fat dress the greens?",
+      "answer": "Lemon juice and olive oil (plus lemon zest).",
+      "q": 1
+    },
+    {
+      "id": "f-150",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What mustard and vinegar are used?",
+      "answer": "Dijon mustard and Chardonnay vinegar.",
+      "q": 2
+    },
+    {
+      "id": "f-151",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "Name three herbs tossed into the greens besides shallot.",
+      "answer": "Parsley, chives, and tarragon.",
+      "q": 3
+    },
+    {
+      "id": "f-152",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What's a good way to serve this dish besides as a side?",
+      "answer": "Also great as an app.",
+      "q": 4
+    },
+    {
+      "id": "f-153",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "How are the potatoes cooked before frying?",
+      "answer": "Boiled.",
+      "q": 1
+    },
+    {
+      "id": "f-154",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What are the potatoes tossed in after frying?",
+      "answer": "Garlic parsley butter.",
+      "q": 2
+    },
+    {
+      "id": "f-155",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What allergens does this dish contain?",
+      "answer": "Dairy and allium.",
+      "q": 3
+    },
+    {
+      "id": "f-156",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What substitutions are available?",
+      "answer": "No dairy, no allium.",
+      "q": 4
+    },
+    {
+      "id": "f-157",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "How are the potatoes prepared before frying?",
+      "answer": "Cut, soaked, and blanched.",
+      "q": 1
+    },
+    {
+      "id": "f-158",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "How are they fried and seasoned?",
+      "answer": "Fried until crisp, seasoned with sea salt.",
+      "q": 2
+    },
+    {
+      "id": "f-159",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "Is this dish gluten-free?",
+      "answer": "Yes.",
+      "q": 3
+    },
+    {
+      "id": "f-160",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "What's the caviar upgrade, and what does it cost?",
+      "answer": "Au Osetra caviar, for an additional $30.",
+      "q": 4
+    },
+    {
+      "id": "f-161",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What four base ingredients make up the custard?",
+      "answer": "Cream, sugar, salt, and vanilla bean (plus eggs).",
+      "q": 1
+    },
+    {
+      "id": "f-162",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "How is the custard finished?",
+      "answer": "Chilled, then bruléed with sugar on top.",
+      "q": 2
+    },
+    {
+      "id": "f-163",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What allergens does this dessert contain?",
+      "answer": "Dairy and egg.",
+      "q": 3
+    },
+    {
+      "id": "f-164",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What vessel is the custard set into?",
+      "answer": "Gratins.",
+      "q": 4
+    },
+    {
+      "id": "f-165",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "What four ingredients make up the ice cream base?",
+      "answer": "Milk, sugar, salt, and fromage blanc.",
+      "q": 1
+    },
+    {
+      "id": "f-166",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "How many quenelles are served?",
+      "answer": "Two.",
+      "q": 2
+    },
+    {
+      "id": "f-167",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "What is the ice cream served with?",
+      "answer": "Huckleberry jus.",
+      "q": 3
+    },
+    {
+      "id": "f-168",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "Where are the huckleberries from?",
+      "answer": "Oregon.",
+      "q": 4
+    },
+    {
+      "id": "f-169",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What four ingredients make the ganache?",
+      "answer": "Chocolate, milk, sugar, and egg yolk.",
+      "q": 1
+    },
+    {
+      "id": "f-170",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What's folded into the ganache?",
+      "answer": "A beaten meringue.",
+      "q": 2
+    },
+    {
+      "id": "f-171",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What is the mousse served alongside?",
+      "answer": "Chantilly cream.",
+      "q": 3
+    },
+    {
+      "id": "f-172",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What's the mousse topped with?",
+      "answer": "Shaved dark chocolate.",
+      "q": 4
+    },
+    {
+      "id": "f-173",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What are the brioche cakes soaked in?",
+      "answer": "Rum syrup.",
+      "q": 1
+    },
+    {
+      "id": "f-174",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What is piped inside the baba?",
+      "answer": "Diplomat cream (whipped cream and pastry cream).",
+      "q": 2
+    },
+    {
+      "id": "f-175",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What's the \"little surprise\" inside?",
+      "answer": "Pineapple jam.",
+      "q": 3
+    },
+    {
+      "id": "f-176",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What's served alongside the baba au rhum on the table?",
+      "answer": "A bottle of Barbancourt 15-year rum.",
+      "q": 4
     }
   ]
 }

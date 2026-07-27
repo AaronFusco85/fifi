@@ -23,7 +23,11 @@
   let nextAction = 'shuffle';
 
   function categoryLabel(cat) {
-    const labels = { white: 'White', red: 'Red', rose: 'Rosé', sparkling: 'Sparkling', dessert: 'Dessert' };
+    const labels = {
+      white: 'White', red: 'Red', rose: 'Rosé', sparkling: 'Sparkling', dessert: 'Dessert',
+      charcuterie: 'Charcuterie', entrees: 'Entrées', plats: 'Plats Principaux',
+      accompagnements: 'Accompagnements', desserts: 'Food Desserts'
+    };
     return labels[cat] || cat;
   }
 
@@ -119,7 +123,7 @@
   }
 
   function buildTypeFilters() {
-    const order = ['sparkling', 'white', 'rose', 'red', 'dessert'];
+    const order = ['sparkling', 'white', 'rose', 'red', 'dessert', 'charcuterie', 'entrees', 'plats', 'accompagnements', 'desserts'];
     const cats = Array.from(new Set(deck.map(c => c.category)))
       .sort((a, b) => order.indexOf(a) - order.indexOf(b));
 
