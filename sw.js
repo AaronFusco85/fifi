@@ -7,7 +7,7 @@ try {
   console.warn('[sw] Could not load config.js', err);
 }
 
-const CACHE_NAME = 'chez-fifi-cache-v13';
+const CACHE_NAME = 'chez-fifi-cache-v14';
 
 function sheetsUrlsConfigured() {
   return self.WINES_CSV_URL && !self.WINES_CSV_URL.startsWith('PASTE_')
@@ -25,6 +25,7 @@ const PRECACHE_URLS = [
   'menu.html',
   'food-menu.html',
   'flashcards.html',
+  'techniques.html',
   'maps.html',
   'team-quiz.html',
   'data/menu.json',
