@@ -4,140 +4,146 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Winemaking Techniques — Chez Fifi</title>
+<title>Méthode Champenoise — Chez Fifi</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="css/style.css?v=33">
 <style>
-  .techniques-intro {
-    margin: 3rem 0 2rem;
+  .intro-section {
+    margin: 3rem 0 3rem;
     padding: 2rem;
     background: rgba(201, 163, 95, 0.08);
     border-left: 3px solid var(--gold);
     border-radius: 4px;
   }
 
-  .techniques-intro p {
+  .intro-section p {
     margin: 0;
     color: var(--paper);
     font-size: 1rem;
     line-height: 1.6;
   }
 
-  .techniques-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin: 3rem 0;
+  .process-section {
+    margin: 4rem 0;
   }
 
-  @media (min-width: 768px) {
-    .techniques-grid {
-      grid-template-columns: 1fr 1fr;
+  .process-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--paper);
+    margin: 2rem 0 1.5rem;
+  }
+
+  .process-diagram {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: rgba(46, 31, 24, 0.4);
+    border: 1px solid rgba(232, 224, 201, 0.12);
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+
+  .process-steps {
+    display: flex;
+    gap: 1rem;
+    min-width: min-content;
+    padding: 0.5rem 0;
+  }
+
+  @media (max-width: 767px) {
+    .process-steps {
+      flex-direction: column;
+      gap: 2rem;
     }
   }
 
-  .technique-card {
-    background: rgba(46, 31, 24, 0.6);
-    border: 1px solid rgba(232, 224, 201, 0.12);
-    border-radius: 6px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  .step {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
   }
 
-  .technique-card:hover {
-    border-color: rgba(201, 163, 95, 0.3);
-    background: rgba(46, 31, 24, 0.9);
-  }
-
-  .technique-header {
-    padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(107, 31, 46, 0.15) 0%, rgba(36, 64, 92, 0.1) 100%);
-    border-bottom: 1px solid rgba(232, 224, 201, 0.08);
-  }
-
-  .technique-header h3 {
-    margin: 0 0 0.5rem 0;
+  .step-number {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, rgba(201, 163, 95, 0.3) 0%, rgba(201, 163, 95, 0.1) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-display);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gold);
+  }
+
+  .step-title {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
     color: var(--paper);
-  }
-
-  .technique-tag {
-    display: inline-block;
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--gold);
     margin-bottom: 0.5rem;
-  }
-
-  .technique-summary {
-    font-size: 0.9rem;
-    color: var(--paper-dim);
-    margin: 0;
-  }
-
-  .technique-body {
-    padding: 1.5rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-
-  .technique-card.active .technique-body {
-    max-height: 1000px;
-  }
-
-  .technique-body h4 {
-    margin: 1.5rem 0 0.8rem 0;
-    font-family: var(--font-display);
-    font-size: 1rem;
-    color: var(--gold);
     text-transform: uppercase;
     letter-spacing: 0.06em;
   }
 
-  .technique-body h4:first-child {
-    margin-top: 0;
+  .step-description {
+    font-size: 0.85rem;
+    color: var(--paper-dim);
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
 
-  .technique-body p,
-  .technique-body li {
-    margin: 0 0 1rem 0;
-    font-size: 0.95rem;
-    line-height: 1.65;
-    color: var(--paper);
+  @media (min-width: 768px) {
+    .step:not(:last-child):after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background: rgba(201, 163, 95, 0.2);
+      top: 24px;
+      left: 100%;
+      margin-left: 8px;
+    }
+
+    .step {
+      position: relative;
+    }
   }
 
-  .technique-body ul {
-    margin: 0 0 1rem 1.5rem;
-    padding: 0;
+  .detail-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(46, 31, 24, 0.3);
+    border: 1px solid rgba(232, 224, 201, 0.08);
+    border-radius: 6px;
   }
 
-  .technique-body li {
-    margin-bottom: 0.6rem;
+  .detail-section h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin: 0 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
-  .technique-body ul li {
-    margin: 0 0 0.6rem 0;
-  }
-
-  .technique-timeline {
-    margin: 1.5rem 0;
+  .timeline {
+    margin: 2rem 0;
     padding-left: 2rem;
     border-left: 2px solid rgba(201, 163, 95, 0.3);
   }
 
-  .technique-timeline-item {
-    margin-bottom: 1.5rem;
+  .timeline-item {
+    margin-bottom: 2rem;
     position: relative;
   }
 
-  .technique-timeline-item:before {
+  .timeline-item:before {
     content: '';
     position: absolute;
     left: -2.5rem;
@@ -148,85 +154,62 @@
     border-radius: 50%;
   }
 
-  .technique-timeline-label {
-    font-size: 0.8rem;
+  .timeline-label {
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--gold);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
   }
 
-  .technique-timeline-text {
+  .timeline-text {
     font-size: 0.95rem;
     color: var(--paper);
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
-  .toggle-icon {
-    position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    color: var(--gold);
-    transition: transform 0.3s ease;
-  }
-
-  .technique-card.active .toggle-icon {
-    transform: rotate(180deg);
-  }
-
-  .technique-detail-section {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(232, 224, 201, 0.1);
-  }
-
-  .technique-detail-section:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
-  }
-
-  .comparison-table {
-    width: 100%;
-    margin: 1.5rem 0;
-    border-collapse: collapse;
-    font-size: 0.9rem;
-  }
-
-  .comparison-table th {
-    background: rgba(201, 163, 95, 0.1);
-    color: var(--gold);
-    padding: 0.8rem;
-    text-align: left;
-    font-family: var(--font-display);
-    border-bottom: 1px solid rgba(201, 163, 95, 0.3);
-  }
-
-  .comparison-table td {
-    padding: 0.8rem;
-    border-bottom: 1px solid rgba(232, 224, 201, 0.08);
-    color: var(--paper);
-  }
-
-  .comparison-table tr:hover {
-    background: rgba(201, 163, 95, 0.05);
-  }
-
-  .technique-highlight {
-    padding: 1rem;
-    margin: 1.5rem 0;
+  .highlight-box {
+    padding: 1.5rem;
+    margin: 2rem 0;
     background: rgba(36, 64, 92, 0.1);
     border-left: 3px solid var(--verdigris);
     border-radius: 4px;
     font-size: 0.95rem;
     color: var(--paper);
+    line-height: 1.7;
+  }
+
+  .highlight-box strong {
+    color: var(--verdigris);
+  }
+
+  .wines-list {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .wines-list li {
+    margin-bottom: 0.8rem;
+    color: var(--paper);
+    font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  svg text {
+    fill: var(--paper);
+    font-family: var(--font-display);
+  }
+
+  .svg-label {
+    font-size: 0.85rem;
+    fill: var(--gold);
+    font-weight: 600;
+  }
+
+  .svg-detail {
+    font-size: 0.75rem;
+    fill: var(--paper-dim);
   }
 </style>
 </head>
@@ -240,7 +223,6 @@
   <nav class="site-nav">
     <a href="index.html">Home</a>
     <a href="menu.html">Beverage Menu</a>
-    <a href="food-menu.html">Food Menu</a>
     <a href="flashcards.html">Flashcards</a>
     <a href="techniques.html" class="active">Techniques</a>
     <a href="maps.html">Wine Map</a>
@@ -248,300 +230,150 @@
 </header>
 
 <main>
-  <div class="page-eyebrow">02 — Learn</div>
-  <h1 class="page-title">Winemaking Techniques</h1>
-  <p class="page-lede">Understanding how a wine is made — and why — is the key to selling it confidently. Click any technique to explore.</p>
+  <div class="page-eyebrow">03 — Learn</div>
+  <h1 class="page-title">Méthode Champenoise</h1>
+  <p class="page-lede">How the world's greatest sparkling wines are made — and why this method costs what it does.</p>
 
-  <div class="techniques-intro">
-    <p>Winemaking style shapes everything a guest tastes: the bubbles, the texture, the flavor development, the aging potential. When you know the method, you can articulate why a wine costs what it does, how it'll age, and what it pairs with. These are the techniques behind the bottles on our list.</p>
+  <div class="intro-section">
+    <p>Méthode Champenoise (officially Méthode Traditionnelle outside Champagne) is the winemaking method that defines premium sparkling wine. The magic happens twice: first in a tank, then inside the bottle itself. It takes patience, precision, and time — but the result is bubbles that last, complexity that deepens, and wines that age like fine still wines. This is why a proper Champagne costs more than Prosecco, and why learning this method transforms how you talk about sparkling wine.</p>
   </div>
 
-  <div class="techniques-grid" id="techniquesGrid">
-
-    <!-- Méthode Champenoise -->
-    <div class="technique-card" id="methodeChampenoise">
-      <div class="technique-header">
-        <div class="technique-tag">Sparkling</div>
-        <h3>Méthode Champenoise</h3>
-        <p class="technique-summary">Double fermentation in the bottle — the gold standard for sparkling wine.</p>
-      </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
-
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>Méthode Champenoise (now officially called Méthode Traditionnelle outside Champagne) is the winemaking method that defines the world's greatest sparkling wines. The wine undergoes fermentation twice: once in a tank to become wine, then again in the sealed bottle itself, where the CO₂ produced by yeast gets trapped in the liquid, creating the bubbles and building complexity layer by layer.</p>
+  <div class="process-section">
+    <h2>The Process at a Glance</h2>
+    <div class="process-diagram">
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-title">Base Wine</div>
+          <div class="step-description">Grapes fermented into dry still wine (11–12% ABV)</div>
         </div>
-
-        <div class="technique-detail-section">
-          <h4>The Steps</h4>
-          <div class="technique-timeline">
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Base Wine</div>
-              <div class="technique-timeline-text">Grapes are harvested, pressed, and fermented into dry still wine — lower alcohol (11–12%) than table wines, higher acidity. This is the raw material.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Blending (Assemblage)</div>
-              <div class="technique-timeline-text">Multiple base wines from different vintages, vineyards, or even grape varieties are blended to create a consistent house style. This is where the winemaker's art lives.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Tirage</div>
-              <div class="technique-timeline-text">The blended wine is bottled with a small amount of yeast and sugar (liqueur de tirage) added. The bottle is capped with a crown cap (like a beer bottle), sealing it completely.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Second Fermentation</div>
-              <div class="technique-timeline-text">Yeast wakes up and ferments the added sugar, producing alcohol and CO₂. Since the bottle is sealed, the gas can't escape — it dissolves into the wine, creating the bubbles and building pressure to 6–8 atmospheres inside the bottle.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Aging on Lees (Élevage)</div>
-              <div class="technique-timeline-text">The dead yeast cells (lees) settle to the bottom. The wine rests in contact with these lees for months or years (minimum 15 months by law in Champagne, often much longer for prestige cuvées). The lees add nutty, brioche, and toasty complexity — these flavors are the signature of great Champagne.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Riddling (Remuage)</div>
-              <div class="technique-timeline-text">Bottles are placed neck-down in an A-frame rack and rotated slowly over weeks. This slides the compacted lees down toward the neck, collecting them in one spot. Traditional riddling is done by hand; modern producers use automated machines (gyropalettes).</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Disgorging (Dégorgement)</div>
-              <div class="technique-timeline-text">The bottle's neck is plunged into an ice-cold brine. The pressure inside freezes a small plug of wine and lees. The crown cap is removed, and the pressure pushes the frozen plug out, along with the trapped lees.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Dosage</div>
-              <div class="technique-timeline-text">A small amount of wine (usually with added sugar — dosage liqueur) is topped back into the bottle to replace what was lost during disgorging and to set the final style. Brut = dry (0–12g sugar/L). Extra Brut = very dry (0–6g). Brut Nature = zero added sugar.</div>
-            </div>
-            <div class="technique-timeline-item">
-              <div class="technique-timeline-label">Final Cap &amp; Rest</div>
-              <div class="technique-timeline-text">The bottle is sealed with a cork and wire cage (muselet). Many producers age the finished wine for several more months or years before release, allowing the dosage to integrate.</div>
-            </div>
-          </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-title">Blending</div>
+          <div class="step-description">Multiple vintages, vineyards, or grapes combined</div>
         </div>
-
-        <div class="technique-detail-section">
-          <h4>Why It Matters</h4>
-          <p>Every step is labor-intensive and takes time. This is why méthode Champenoise sparkling wines cost more than mass-produced alternatives. The payoff: finer bubbles (more stable, smaller), deeper complexity from years on the lees, and better aging potential. A great Champagne can develop for 10, 20, or even 50+ years in the bottle.</p>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-title">Tirage</div>
+          <div class="step-description">Bottled with yeast and sugar, sealed</div>
         </div>
-
-        <div class="technique-detail-section">
-          <h4>On Our List</h4>
-          <p>Delamotte (Blanc de Blancs, Millésime, Rosé), Michel Gonet (Les 3 Terroirs), and Laurent-Perrier (Cuvée Rosé, Ultra Brut, Grand Siècle) all use méthode Champenoise. The Avinyó Reserva Brut from Spain uses the same method but can only call itself "Cava" since it's not from Champagne — same rigorous process, different region.</p>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-title">Fermentation</div>
+          <div class="step-description">Second fermentation in bottle creates bubbles</div>
         </div>
-
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-title">Aging on Lees</div>
+          <div class="step-description">Months/years on dead yeast cells for complexity</div>
+        </div>
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-title">Riddling</div>
+          <div class="step-description">Bottles rotated to collect sediment in neck</div>
+        </div>
+        <div class="step">
+          <div class="step-number">7</div>
+          <div class="step-title">Disgorging</div>
+          <div class="step-description">Frozen sediment ejected from bottle</div>
+        </div>
+        <div class="step">
+          <div class="step-number">8</div>
+          <div class="step-title">Dosage</div>
+          <div class="step-description">Sugar adjusted to set final style (Brut, Extra Brut, etc.)</div>
+        </div>
       </div>
     </div>
+  </div>
 
-    <!-- Charmat Method -->
-    <div class="technique-card">
-      <div class="technique-header">
-        <div class="technique-tag">Sparkling</div>
-        <h3>Charmat Method</h3>
-        <p class="technique-summary">Second fermentation in a tank, not a bottle — faster, lighter, fresher.</p>
+  <div class="detail-section">
+
+    <h3>Step-by-Step Deep Dive</h3>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-label">Step 1: Base Wine (Vin de Base)</div>
+        <div class="timeline-text">Grapes are harvested, usually slightly under-ripe to preserve acidity. They're pressed and fermented into dry still wine — typically 11–12% alcohol. This is the raw material. The winemaker's first job is creating balanced base wine: fresh, crisp, but with enough structure to support the fermentation and aging to come.</div>
       </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
 
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>Also called "tank method" — the second fermentation happens in a pressurized stainless steel tank instead of individual bottles. CO₂ is still trapped, creating bubbles and pressure, but the wine never ages on yeast cells the way it does in bottles. The result is fresher, crisper, with lighter flavors — and it's ready to sell in weeks instead of years.</p>
+      <div class="timeline-item">
+        <div class="timeline-label">Step 2: Blending (Assemblage)</div>
+        <div class="timeline-text">This is where artistry lives. The winemaker tastes dozens of base wines — from different years, different vineyards, sometimes even different grape varieties — and blends them to create the house style. A non-vintage Champagne might combine the current year's wine with reserves from 5–10 prior vintages. The goal: consistency and complexity that no single vintage alone could achieve.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 3: Tirage (Bottling for Fermentation)</div>
+        <div class="timeline-text">The blended wine is bottled. Just before sealing, a small amount of yeast and sugar (liqueur de tirage) is added — about 6 grams per liter. The bottle is immediately capped with a crown cap (like a beer bottle), creating an airtight seal. The wine is now a closed system.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 4: Secondary Fermentation (Prise de Mousse)</div>
+        <div class="timeline-text">The yeast wakes up and ferments the added sugar. This produces two things: alcohol (which increases the wine's alcohol by about 1–1.5%) and CO₂ (carbon dioxide). Since the bottle is sealed, the CO₂ can't escape — it dissolves into the liquid, creating pressure inside the bottle that builds to 6–8 atmospheres (roughly 90–120 PSI). This pressure, not added gas, creates the bubbles. It takes 1–3 weeks.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 5: Aging on Lees (Élevage)</div>
+        <div class="timeline-text">After fermentation, the yeast cells die and settle as sediment (lees) to the bottom of the bottle. The wine now rests on these lees. This is where the magic happens. The lees add nutty, brioche, and toasty flavors through a chemical process called autolysis. In Champagne, by law, this aging must last at least 15 months (non-vintage) or 3 years (vintage). But great houses often age much longer — 5, 10, or 20+ years. Longer aging = more complexity.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 6: Riddling (Remuage)</div>
+        <div class="timeline-text">After aging, the sediment needs to move from the bottom of the bottle to the neck so it can be removed. Bottles are placed neck-down in a riddling rack (A-frame) and rotated 1/8 turn each day for 3–6 weeks. This gradually slides the compacted lees toward the neck. Traditionally this was done by hand; modern producers use machines called gyropalettes (automated racks that do the same job faster). Traditional hand-riddling is a craft skill — you can sometimes see bottles in Champagne houses marked with chalk to track their progress.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 7: Disgorging (Dégorgement)</div>
+        <div class="timeline-text">The bottle's neck is plunged into an ice-cold brine bath. The cold freezes a small plug of wine and sediment. The crown cap is then removed, and the internal pressure (remember those 6–8 atmospheres?) ejects the frozen plug, taking the trapped lees with it. Only a tiny amount of wine is lost. This is why disgorging requires precision and experience.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-label">Step 8: Dosage (Liqueur d'Expédition)</div>
+        <div class="timeline-text">After disgorging, a tiny amount of wine is added back to replace what was lost during disgorging. This wine often contains a small amount of sugar (dosage liqueur), which sets the final sweetness level. This is where style is determined:
+        <ul style="margin-top: 0.8rem; margin-left: 1.5rem;">
+          <li><strong>Brut Nature / Brut Zero:</strong> 0 g/L sugar — completely bone-dry</li>
+          <li><strong>Extra Brut:</strong> 0–6 g/L — very dry, no residual sweetness perceptible</li>
+          <li><strong>Brut:</strong> 0–12 g/L — dry (this is the house style for most Champagnes)</li>
+          <li><strong>Extra Dry / Extra Sec:</strong> 12–17 g/L — off-dry, slight sweetness</li>
+          <li><strong>Demi-Sec:</strong> 17–32 g/L — noticeably sweet</li>
+        </ul>
         </div>
+      </div>
 
-        <div class="technique-detail-section">
-          <h4>Key Differences from Méthode Champenoise</h4>
-          <table class="comparison-table">
-            <tr>
-              <th>Aspect</th>
-              <th>Méthode Champenoise</th>
-              <th>Charmat</th>
-            </tr>
-            <tr>
-              <td>Second Fermentation</td>
-              <td>In bottle</td>
-              <td>In tank</td>
-            </tr>
-            <tr>
-              <td>Contact with Lees</td>
-              <td>Months/years</td>
-              <td>Weeks/none</td>
-            </tr>
-            <tr>
-              <td>Bubble Size</td>
-              <td>Fine, persistent</td>
-              <td>Larger, dissipates faster</td>
-            </tr>
-            <tr>
-              <td>Complexity</td>
-              <td>Nutty, brioche, toasted</td>
-              <td>Fresh, fruity, floral</td>
-            </tr>
-            <tr>
-              <td>Time to Market</td>
-              <td>15 months minimum</td>
-              <td>4–8 weeks</td>
-            </tr>
-            <tr>
-              <td>Price Point</td>
-              <td>Higher</td>
-              <td>Lower</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>When to Use This Information</h4>
-          <p>Charmat is perfect for Prosecco, light Italian sparklers, and some Moscato — styles designed for immediate drinking with vibrant fruit. If a guest asks why Prosecco costs less than Champagne, this is your answer: different method, different purpose. It's not "worse," it's different.</p>
-        </div>
-
+      <div class="timeline-item">
+        <div class="timeline-label">Step 9: Final Closure & Rest</div>
+        <div class="timeline-text">The bottle is sealed with a cork (not a crown cap anymore) and secured with a wire cage (muselet). Many producers age the finished wine for an additional 1–3 months or more before release, allowing the dosage to integrate and the wine to settle. Then it ships to market.</div>
       </div>
     </div>
+  </div>
 
-    <!-- Pét-Nat -->
-    <div class="technique-card">
-      <div class="technique-header">
-        <div class="technique-tag">Sparkling</div>
-        <h3>Pét-Nat (Perlant)</h3>
-        <p class="technique-summary">Bottled mid-fermentation — wild, funky, unpredictable.</p>
-      </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
+  <div class="detail-section">
+    <h3>Why This Method Costs More</h3>
+    <p>Every step requires labor, time, and expertise. Hand-riddling alone took weeks per bottle (now often automated). Disgorging requires trained hands. The minimum aging in Champagne is 15 months; great bottles age 5–20+ years. The facilities must be maintained for decades. The risk is real — bottles can fail, sediment can be over-handled, pressure can build unpredictably.</p>
 
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>Short for "pétillant naturel" (naturally sparkling). Wine is bottled while still fermenting — yeast is still alive and converting sugar to alcohol. The fermentation continues in the bottle, creating bubbles. It's the oldest method for making sparkling wine (predates Champagne), now experiencing a comeback among natural winemakers.</p>
-        </div>
+    <p>The result, though, is unmatched: finer, more persistent bubbles than any other method (smaller bubble size from natural CO₂ dissolution), deeper flavor complexity from years on lees, better aging potential (well-made Champagne can develop for 30–50+ years), and an elegance that mass-produced sparklers simply can't match.</p>
 
-        <div class="technique-detail-section">
-          <h4>The Unpredictability</h4>
-          <div class="technique-highlight">
-            <strong>Pét-Nat is alive.</strong> No added yeast or sugar. No dosage. The fermentation is wild — unpredictable alcohol levels, variable carbonation, possible bottle variation. Some bottles fizz aggressively; others are nearly still. Some taste funky or off; others are delicious. This is part of its charm and its risk.
-          </div>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>Style &amp; Flavor</h4>
-          <p>Pét-Nat is usually low-alcohol (8–11%), fruity, slightly sweet, and often has a cloudy, rustic character — sometimes funky notes of yeast or fermentation that natural winemakers embrace. It's a party wine, not a meditation wine. Think playful, not polished.</p>
-        </div>
-
-      </div>
+    <div class="highlight-box">
+      <strong>The Price Question:</strong> If a guest asks why Champagne costs $60 and Prosecco costs $15, the answer is this method. Prosecco uses the tank method (faster, cheaper, fresher style). Both are good — they're just different. Méthode Champenoise is labor-intensive, time-intensive, and produces wines built to age and improve for decades.
     </div>
+  </div>
 
-    <!-- Soléra (Fortified) -->
-    <div class="technique-card">
-      <div class="technique-header">
-        <div class="technique-tag">Fortified</div>
-        <h3>Solera System</h3>
-        <p class="technique-summary">Fractional blending across decades — one wine, perpetually renewed.</p>
-      </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
-
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>The solera system is used in Sherry and Madeira production. Wine is aged in a stack of barrels (called a "solera"). Every year, a fraction of the oldest wine (bottom barrel) is bottled and sold. It's replaced with slightly younger wine from the barrel above it, which is replaced by wine from the barrel above that, and so on. The cycle repeats endlessly.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>Why It's Genius</h4>
-          <p>A single bottle of solera-aged wine might contain drops from barrels ranging from 10 to 50+ years old — all fractionally blended together. This creates a consistency and depth impossible with single-vintage aging alone. It also means a solera is theoretically immortal: as long as you keep refreshing it, it never expires.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>On Our List</h4>
-          <p>Cossart Gordon's Bual Solera 1845 is a working solera that's been refreshed continuously since 1875. Every bottle contains drops from the original 1845 vintage, blended with newer wine — a living connection to 19th-century Madeira.</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Oxidative Aging (Madeira/Sherry) -->
-    <div class="technique-card">
-      <div class="technique-header">
-        <div class="technique-tag">Fortified</div>
-        <h3>Oxidative Aging</h3>
-        <p class="technique-summary">Letting wine breathe over years — building rancio and dried-fruit depth.</p>
-      </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
-
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>Most wines are protected from oxygen — it causes spoilage. Oxidative aging inverts this: barrels sit with an intentional air gap, and the wine is exposed to steady, controlled oxygen over months or years. The result is "maderization" — a shift from fresh fruit flavors to dried fruit, nuts, caramel, and toffee. The wine develops rancio complexity (nutty, spiced, savory edge).</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>The Paradox</h4>
-          <p>Oxygen usually ruins wine. But at the right temperature, with the right alcohol level and acidity, oxidation becomes a flavor-building tool. Madeira's high acid keeps it from turning flat. Sherry's fortification (added spirit) preserves freshness even as oxidation transforms the flavor profile.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>On Our List</h4>
-          <p>Domaine de Rancy's Rivesaltes Ambré (2000) has spent 21 years in ambient cellar conditions, slowly oxidizing. Barbeito's Sercial and Malvasia Reserva Velha (1898 and 1834) are over a century old, their flavors transformed by decades of controlled oxidation into something otherworldly.</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Botrytis (Noble Rot) -->
-    <div class="technique-card">
-      <div class="technique-header">
-        <div class="technique-tag">Dessert</div>
-        <h3>Botrytis Cinerea (Noble Rot)</h3>
-        <p class="technique-summary">Fungus that concentrates sugar — nature's sweetness amplifier.</p>
-      </div>
-      <span class="toggle-icon">▼</span>
-      <div class="technique-body">
-
-        <div class="technique-detail-section">
-          <h4>What It Is</h4>
-          <p>Botrytis cinerea is a fungus (mold) that attacks grape skins, piercing them and causing the grapes to shrivel. But unlike gray rot (which spoils wine), botrytis in the right conditions becomes "noble rot" — it dehydrates the grapes while concentrating the sugar, acidity, and flavors inside.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>The Conditions</h4>
-          <p>Botrytis only becomes noble under specific conditions: cool nights, morning fog, and afternoon sun. The fog creates humidity for the fungus to thrive; the sun evaporates water from the fruit, concentrating sugars. Change one variable and you get spoiled fruit instead of liquid gold. This is why Sauternes (morning fog off the Ciron river) and Tokaij (Hungarian valleys with similar morning mist) became the world's botrytis capitals.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>The Harvest</h4>
-          <p>Berries don't ripen evenly — botrytis takes them at different rates. Pickers must return to the vineyard repeatedly over weeks, sometimes even selecting individual berries rather than whole bunches. In poor years, if botrytis doesn't develop properly or acidity is lost, producers declassify the entire vintage rather than bottle substandard wine. This is why great Sauternes and Tokaij cost what they do.</p>
-        </div>
-
-        <div class="technique-detail-section">
-          <h4>On Our List</h4>
-          <p>Château Rieussec (2009) and Château d'Yquem (1999) are both built on botrytis-affected grapes. The 1999 Yquem shows how beautifully botrytis ages — over 25 years on, it's still balanced, elegant, and nowhere near the end of its life.</p>
-        </div>
-
-      </div>
-    </div>
-
+  <div class="detail-section">
+    <h3>On Our Sparkling Wine List</h3>
+    <p>All of our featured sparkling wines use Méthode Champenoise or Méthode Traditionnelle:</p>
+    <ul class="wines-list">
+      <li><strong>Delamotte Blanc de Blancs Brut NV</strong> — 100% Chardonnay, aged minimum 3 years on lees</li>
+      <li><strong>Delamotte 'Millésime' Blanc de Blancs Brut 2018</strong> — Vintage-dated, aged 6+ years on lees</li>
+      <li><strong>Delamotte Rosé Brut NV</strong> — Pinot Noir macerated on skins, then blended with aged Blanc de Blancs</li>
+      <li><strong>Michel Gonet "Les 3 Terroirs" Blanc de Blancs Extra Brut 2020</strong> — Three distinct Chardonnay parcels, 6+ years on lees</li>
+      <li><strong>Avinyó Reserva Brut 2022</strong> — Spanish Cava using the same traditional method (15 months minimum on lees)</li>
+    </ul>
+    <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--paper-dim); line-height: 1.6;">Each of these represents a commitment to quality: extensive aging on lees, controlled dosage, and winemaking that treats the bottle as the final vessel for development, not just a container for shipping.</p>
   </div>
 
 </main>
 
 <footer class="site-footer">CHEZ FIFI — INTERNAL STAFF RESOURCE — NOT FOR GUEST USE</footer>
 
-<script>
-  // Make technique cards expandable/collapsible
-  const cards = document.querySelectorAll('.technique-card');
-  
-  cards.forEach(card => {
-    const header = card.querySelector('.technique-header');
-    
-    header.addEventListener('click', function() {
-      // Close all other cards
-      cards.forEach(otherCard => {
-        if (otherCard !== card) {
-          otherCard.classList.remove('active');
-        }
-      });
-      
-      // Toggle this card
-      card.classList.toggle('active');
-    });
-  });
-
-  // Open first card by default
-  if (cards.length > 0) {
-    cards[0].classList.add('active');
-  }
-</script>
 <script src="js/sw-register.js"></script>
 </body>
 </html>
