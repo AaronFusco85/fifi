@@ -1,0 +1,1590 @@
+{
+  "deckTitle": "Server Study Guide — Chez Fifi",
+  "instructions": "Each card's front shows the wine and a study question; the back shows the answer. Add new cards by copying an entry inside 'cards'.",
+  "cards": [
+    {
+      "id": "f-001",
+      "category": "sparkling",
+      "wine": "Cava, 'Reserva Brut' — Avinyó, 2022",
+      "question": "What are the three grapes that make up this Cava, and what characteristic does each one add?",
+      "answer": "Xarel·lo (60%) adds backbone and earthiness; Macabeo (25%) adds floral lift; Parellada (15%) adds acidity and elegance.",
+      "q": 1,
+      "wineId": "m-01"
+    },
+    {
+      "id": "f-002",
+      "category": "sparkling",
+      "wine": "Cava, 'Reserva Brut' — Avinyó, 2022",
+      "question": "What certification did this producer earn in 2022, and how many other Cava producers hold it?",
+      "answer": "The Elaborador Integral designation — Cava's equivalent of Récoltant-Manipulant — held by only 14 producers total in the D.O.",
+      "q": 2,
+      "wineId": "m-01"
+    },
+    {
+      "id": "f-003",
+      "category": "sparkling",
+      "wine": "Cava, 'Reserva Brut' — Avinyó, 2022",
+      "question": "How long has the Esteve family farmed this land, and what generation are they on?",
+      "answer": "Since 1597 — now the 4th generation.",
+      "q": 3,
+      "wineId": "m-01"
+    },
+    {
+      "id": "f-004",
+      "category": "sparkling",
+      "wine": "Cava, 'Reserva Brut' — Avinyó, 2022",
+      "question": "How long is this wine aged on the lees, and what does that aging give the wine?",
+      "answer": "18–24 months on the lees, giving it a creamy texture, fine mousse, and toasted brioche notes.",
+      "q": 4,
+      "wineId": "m-01"
+    },
+    {
+      "id": "f-005",
+      "category": "sparkling",
+      "wine": "Champagne, 'Les 3 Terroirs' Blanc de Blancs Extra Brut — Michel Gonet, 2020",
+      "question": "What grape is this Champagne made from, and what three flavors come specifically from its extended lees aging?",
+      "answer": "100% Chardonnay; extended lees aging gives it hazelnut, toasted almond, and brioche notes.",
+      "q": 1,
+      "wineId": "m-02"
+    },
+    {
+      "id": "f-006",
+      "category": "sparkling",
+      "wine": "Champagne, 'Les 3 Terroirs' Blanc de Blancs Extra Brut — Michel Gonet, 2020",
+      "question": "What are the three vineyard sites in this blend, and what does each contribute?",
+      "answer": "Le Mesnil sur Oger (Grand Cru chalk, tension), Montgueux (cool, citrus-driven), and Vindey in the Sézannais (rounder, fleshier texture).",
+      "q": 2,
+      "wineId": "m-02"
+    },
+    {
+      "id": "f-007",
+      "category": "sparkling",
+      "wine": "Champagne, 'Les 3 Terroirs' Blanc de Blancs Extra Brut — Michel Gonet, 2020",
+      "question": "How many generations has the Gonet family owned this house, and who runs it today?",
+      "answer": "7 generations — founded in 1802, now run by Sophie Gonet.",
+      "q": 3,
+      "wineId": "m-02"
+    },
+    {
+      "id": "f-008",
+      "category": "sparkling",
+      "wine": "Champagne, 'Les 3 Terroirs' Blanc de Blancs Extra Brut — Michel Gonet, 2020",
+      "question": "What is the dosage level of this wine, and what style does that make it?",
+      "answer": "2 g/L — very low, keeping the wine precise and mineral (a Blanc de Blancs Extra Brut).",
+      "q": 4,
+      "wineId": "m-02"
+    },
+    {
+      "id": "f-009",
+      "category": "sparkling",
+      "wine": "Champagne, 'Cuvée Rosé' Brut — Laurent-Perrier, NV",
+      "question": "What grape makes up this rosé Champagne, and what winemaking method gives it its pink color?",
+      "answer": "100% Pinot Noir; the color comes from saignée maceration — 48–72 hours of skin contact before pressing.",
+      "q": 1,
+      "wineId": "m-03"
+    },
+    {
+      "id": "f-010",
+      "category": "sparkling",
+      "wine": "Champagne, 'Cuvée Rosé' Brut — Laurent-Perrier, NV",
+      "question": "How many Grand Cru villages source the fruit for this wine, and name two of them.",
+      "answer": "10 Grand Cru villages, including Bouzy and Ambonnay (also Louvois and Tours-sur-Marne).",
+      "q": 2,
+      "wineId": "m-03"
+    },
+    {
+      "id": "f-011",
+      "category": "sparkling",
+      "wine": "Champagne, 'Cuvée Rosé' Brut — Laurent-Perrier, NV",
+      "question": "Who created this cuvée, in what year, and what category did it start?",
+      "answer": "Bernard de Nonancourt, in 1968; it started the modern rosé Champagne category.",
+      "q": 3,
+      "wineId": "m-03"
+    },
+    {
+      "id": "f-012",
+      "category": "sparkling",
+      "wine": "Champagne, 'Cuvée Rosé' Brut — Laurent-Perrier, NV",
+      "question": "What sales distinction does this wine hold today?",
+      "answer": "It's the world's best-selling rosé Champagne.",
+      "q": 4,
+      "wineId": "m-03"
+    },
+    {
+      "id": "f-013",
+      "category": "sparkling",
+      "wine": "Champagne, 'Ultra Brut' Brut Nature — Laurent-Perrier, NV",
+      "question": "What two grapes make up this Champagne, and roughly what percentage of each?",
+      "answer": "~55% Chardonnay, 45% Pinot Noir.",
+      "q": 1,
+      "wineId": "m-04"
+    },
+    {
+      "id": "f-014",
+      "category": "sparkling",
+      "wine": "Champagne, 'Ultra Brut' Brut Nature — Laurent-Perrier, NV",
+      "question": "How much dosage (added sugar) does this wine have, and what does that make its taste style?",
+      "answer": "Zero dosage — completely dry, showing pure grape and chalk character with no sweetness.",
+      "q": 2,
+      "wineId": "m-04"
+    },
+    {
+      "id": "f-015",
+      "category": "sparkling",
+      "wine": "Champagne, 'Ultra Brut' Brut Nature — Laurent-Perrier, NV",
+      "question": "What year was this style introduced, and what older house tradition does it revive?",
+      "answer": "Introduced in 1981; it revives the 1889 'Grand Vin Sans Sucre' style, originally made for British clients.",
+      "q": 3,
+      "wineId": "m-04"
+    },
+    {
+      "id": "f-016",
+      "category": "sparkling",
+      "wine": "Champagne, 'Ultra Brut' Brut Nature — Laurent-Perrier, NV",
+      "question": "How many crus make up this blend, and how long does it rest on the lees?",
+      "answer": "15 Grand and Premier Cru crus; at least 6 years on the lees.",
+      "q": 4,
+      "wineId": "m-04"
+    },
+    {
+      "id": "f-017",
+      "category": "sparkling",
+      "wine": "Champagne, 'Grand Siècle No. 26' Brut — Laurent-Perrier, NV (2012, 2008, 2007)",
+      "question": "What two grapes make up this wine, and which one is the majority?",
+      "answer": "58% Chardonnay, 42% Pinot Noir — Chardonnay-dominant.",
+      "q": 1,
+      "wineId": "m-05"
+    },
+    {
+      "id": "f-018",
+      "category": "sparkling",
+      "wine": "Champagne, 'Grand Siècle No. 26' Brut — Laurent-Perrier, NV (2012, 2008, 2007)",
+      "question": "What three vintages are blended into this release, and in what proportions?",
+      "answer": "65% 2012, 25% 2008, 10% 2007.",
+      "q": 2,
+      "wineId": "m-05"
+    },
+    {
+      "id": "f-019",
+      "category": "sparkling",
+      "wine": "Champagne, 'Grand Siècle No. 26' Brut — Laurent-Perrier, NV (2012, 2008, 2007)",
+      "question": "How many Grand Cru villages source the fruit for this wine?",
+      "answer": "Eight.",
+      "q": 3,
+      "wineId": "m-05"
+    },
+    {
+      "id": "f-020",
+      "category": "sparkling",
+      "wine": "Champagne, 'Grand Siècle No. 26' Brut — Laurent-Perrier, NV (2012, 2008, 2007)",
+      "question": "What is this cuvée named after, and what distinctive bottle design does it use?",
+      "answer": "Named for Louis XIV's 'Grand Siècle' (Great Century); bottled in a replica 17th-century flask.",
+      "q": 4,
+      "wineId": "m-05"
+    },
+    {
+      "id": "f-021",
+      "category": "white",
+      "wine": "Muscadet, 'La Grange' — Luneau-Papin, 2023",
+      "question": "What grape is this Muscadet made from, and what mineral flavor is it especially known for?",
+      "answer": "100% Melon de Bourgogne; known for crushed oyster shell and wet stone minerality.",
+      "q": 1,
+      "wineId": "m-06"
+    },
+    {
+      "id": "f-022",
+      "category": "white",
+      "wine": "Muscadet, 'La Grange' — Luneau-Papin, 2023",
+      "question": "How many generations has the Luneau family farmed this land, and since when?",
+      "answer": "9 generations, since the late 1600s.",
+      "q": 2,
+      "wineId": "m-06"
+    },
+    {
+      "id": "f-023",
+      "category": "white",
+      "wine": "Muscadet, 'La Grange' — Luneau-Papin, 2023",
+      "question": "What two certifications does this estate hold?",
+      "answer": "Certified organic (Ecocert) and certified biodynamic (Demeter & Biodyvin).",
+      "q": 3,
+      "wineId": "m-06"
+    },
+    {
+      "id": "f-024",
+      "category": "white",
+      "wine": "Muscadet, 'La Grange' — Luneau-Papin, 2023",
+      "question": "How does La Grange differ in style from the estate's other village wine, Le Verger?",
+      "answer": "La Grange is rounder and fleshier; Le Verger is firmer and more linear.",
+      "q": 4,
+      "wineId": "m-06"
+    },
+    {
+      "id": "f-025",
+      "category": "white",
+      "wine": "Sancerre, 'Les Coûtes' — Pascal & Nicolas Reverdy, 2025",
+      "question": "What grape is this Sancerre made from, and what makes its texture different from typical Sancerre?",
+      "answer": "100% Sauvignon Blanc; it's noted as unusually dense and full-bodied for the appellation.",
+      "q": 1,
+      "wineId": "m-07"
+    },
+    {
+      "id": "f-026",
+      "category": "white",
+      "wine": "Sancerre, 'Les Coûtes' — Pascal & Nicolas Reverdy, 2025",
+      "question": "What soil type are the vines grown on, and what famous village shares this same soil?",
+      "answer": "Kimmeridgian Marne (Terre Blanche) — the same bedrock as Chavignol.",
+      "q": 2,
+      "wineId": "m-07"
+    },
+    {
+      "id": "f-027",
+      "category": "white",
+      "wine": "Sancerre, 'Les Coûtes' — Pascal & Nicolas Reverdy, 2025",
+      "question": "Where did the two sons of the family train, and at what estates?",
+      "answer": "Victorien trained at Domaine Rousseau; Benjamin trained at Romanée-Conti.",
+      "q": 3,
+      "wineId": "m-07"
+    },
+    {
+      "id": "f-028",
+      "category": "white",
+      "wine": "Sancerre, 'Les Coûtes' — Pascal & Nicolas Reverdy, 2025",
+      "question": "What yield restriction does this cuvée follow?",
+      "answer": "Restricted to 45 hl/ha.",
+      "q": 4,
+      "wineId": "m-07"
+    },
+    {
+      "id": "f-029",
+      "category": "white",
+      "wine": "Albariño, 'Afelio' — Manuel Moldes, 2024",
+      "question": "What grape is this wine made from, and what three flavors define its nose?",
+      "answer": "100% Albariño; salt spray, white peach, and lemon define the nose.",
+      "q": 1,
+      "wineId": "m-08"
+    },
+    {
+      "id": "f-030",
+      "category": "white",
+      "wine": "Albariño, 'Afelio' — Manuel Moldes, 2024",
+      "question": "What soil type is this specific bottling grown on, and what does it contrast with in the winemaker's range?",
+      "answer": "Granite bedrock — contrasts with his schist-based bottlings.",
+      "q": 2,
+      "wineId": "m-08"
+    },
+    {
+      "id": "f-031",
+      "category": "white",
+      "wine": "Albariño, 'Afelio' — Manuel Moldes, 2024",
+      "question": "What is the winemaker's nickname, and what other winery does he work for?",
+      "answer": "\"Chicho\" — he's also the winemaker at Bodegas Fulcro.",
+      "q": 3,
+      "wineId": "m-08"
+    },
+    {
+      "id": "f-032",
+      "category": "white",
+      "wine": "Albariño, 'Afelio' — Manuel Moldes, 2024",
+      "question": "How old are the vines, and what traditional trellis system are they grown on?",
+      "answer": "50+ years old, on the traditional pergola system on granite posts.",
+      "q": 4,
+      "wineId": "m-08"
+    },
+    {
+      "id": "f-033",
+      "category": "white",
+      "wine": "Chenin Blanc, 'Les Argiles' — François Chidaine, 2024",
+      "question": "What grape is this wine made from, and what two textural notes stand out on the nose?",
+      "answer": "100% Chenin Blanc; beeswax and fresh cream stand out on the nose.",
+      "q": 1,
+      "wineId": "m-09"
+    },
+    {
+      "id": "f-034",
+      "category": "white",
+      "wine": "Chenin Blanc, 'Les Argiles' — François Chidaine, 2024",
+      "question": "Why is this wine labeled \"Vin de France\" instead of Vouvray?",
+      "answer": "Because Chidaine's cellar is in neighboring Montlouis, and the Vouvray AOC has barred him from using the Vouvray name since 2014.",
+      "q": 2,
+      "wineId": "m-09"
+    },
+    {
+      "id": "f-035",
+      "category": "white",
+      "wine": "Chenin Blanc, 'Les Argiles' — François Chidaine, 2024",
+      "question": "How large is the domaine today, versus when Chidaine inherited it in 1989?",
+      "answer": "45 hectares today, up from just 4 hectares in 1989.",
+      "q": 3,
+      "wineId": "m-09"
+    },
+    {
+      "id": "f-036",
+      "category": "white",
+      "wine": "Chenin Blanc, 'Les Argiles' — François Chidaine, 2024",
+      "question": "What recognition has Chidaine received from La Revue du Vin de France?",
+      "answer": "He holds the highest rating of any Loire Valley producer — one of only seven to hold it.",
+      "q": 4,
+      "wineId": "m-09"
+    },
+    {
+      "id": "f-037",
+      "category": "white",
+      "wine": "Chablis, '45°' — Clément Lavallée, 2023",
+      "question": "What grape is this Chablis made from, and what does the name \"45°\" refer to?",
+      "answer": "100% Chardonnay; \"45°\" refers to the 45-degree slope of the vineyard the grapes come from.",
+      "q": 1,
+      "wineId": "m-10"
+    },
+    {
+      "id": "f-038",
+      "category": "white",
+      "wine": "Chablis, '45°' — Clément Lavallée, 2023",
+      "question": "What vessel is this wine aged in, and why does that matter for its style?",
+      "answer": "Stainless steel — not oak — for 18 months, preserving the site's pure mineral character without oxidative influence.",
+      "q": 2,
+      "wineId": "m-10"
+    },
+    {
+      "id": "f-039",
+      "category": "white",
+      "wine": "Chablis, '45°' — Clément Lavallée, 2023",
+      "question": "What two famous estates did Clément Lavallée work at before launching his own label?",
+      "answer": "Château Margaux and Armand Heitz (also Domaine Chapoutier and Rutherglen, Australia).",
+      "q": 3,
+      "wineId": "m-10"
+    },
+    {
+      "id": "f-040",
+      "category": "white",
+      "wine": "Chablis, '45°' — Clément Lavallée, 2023",
+      "question": "Who are Lavallée's notable winemaking neighbors in Courgis?",
+      "answer": "Thomas Pico of Pattes Loup and Domaine De Moor.",
+      "q": 4,
+      "wineId": "m-10"
+    },
+    {
+      "id": "f-041",
+      "category": "rose",
+      "wine": "Rosé, 'Rubentis' Getariako Txakolina — Ameztoi, 2025",
+      "question": "What two grapes make up this wine, and in what proportion?",
+      "answer": "A 50/50 field blend of Hondarribi Beltza and Hondarribi Zuri.",
+      "q": 1,
+      "wineId": "m-11"
+    },
+    {
+      "id": "f-042",
+      "category": "rose",
+      "wine": "Rosé, 'Rubentis' Getariako Txakolina — Ameztoi, 2025",
+      "question": "Is the fizz in this wine natural or added, and how is it created?",
+      "answer": "Natural — bottle-conditioned residual CO₂ from fermentation, never force-carbonated.",
+      "q": 2,
+      "wineId": "m-11"
+    },
+    {
+      "id": "f-043",
+      "category": "rose",
+      "wine": "Rosé, 'Rubentis' Getariako Txakolina — Ameztoi, 2025",
+      "question": "What category did this specific wine pioneer, and in what decade?",
+      "answer": "It was the first rosé Txakoli ever produced, in the 2000s.",
+      "q": 3,
+      "wineId": "m-11"
+    },
+    {
+      "id": "f-044",
+      "category": "rose",
+      "wine": "Rosé, 'Rubentis' Getariako Txakolina — Ameztoi, 2025",
+      "question": "How old are some of the red grape vines used in this wine?",
+      "answer": "Some Hondarribi Beltza vines date back to 1840.",
+      "q": 4,
+      "wineId": "m-11"
+    },
+    {
+      "id": "f-045",
+      "category": "rose",
+      "wine": "'Le Rosé' Vaucluse — Chêne Bleu, 2024",
+      "question": "What four grapes make up this rosé, and which one is the majority?",
+      "answer": "60% Grenache, 20% Syrah, 14% Mourvèdre, 6% Rolle (Vermentino) — Grenache-dominant.",
+      "q": 1,
+      "wineId": "m-12"
+    },
+    {
+      "id": "f-046",
+      "category": "rose",
+      "wine": "'Le Rosé' Vaucluse — Chêne Bleu, 2024",
+      "question": "What elevation is this vineyard at, and what distinction does that give it in the southern Rhône?",
+      "answer": "530–630 meters — the highest vineyard in the southern Rhône.",
+      "q": 2,
+      "wineId": "m-12"
+    },
+    {
+      "id": "f-047",
+      "category": "rose",
+      "wine": "'Le Rosé' Vaucluse — Chêne Bleu, 2024",
+      "question": "What historic building once stood on this property, and who owned it?",
+      "answer": "A medieval priory once owned by the Knights Templar.",
+      "q": 3,
+      "wineId": "m-12"
+    },
+    {
+      "id": "f-048",
+      "category": "rose",
+      "wine": "'Le Rosé' Vaucluse — Chêne Bleu, 2024",
+      "question": "What wine did Decanter compare this to?",
+      "answer": "Domaine Tempier Bandol.",
+      "q": 4,
+      "wineId": "m-12"
+    },
+    {
+      "id": "f-049",
+      "category": "red",
+      "wine": "Garnacha, 'El Mentridano' — Vitícola Mentridana, 2022",
+      "question": "What grape is this wine made from, and what makes its style \"more Burgundian than Spanish\"?",
+      "answer": "100% Garnacha; its light body, delicate tannins, and floral character make it feel more Burgundian than a typical bold Spanish red.",
+      "q": 1,
+      "wineId": "m-13"
+    },
+    {
+      "id": "f-050",
+      "category": "red",
+      "wine": "Garnacha, 'El Mentridano' — Vitícola Mentridana, 2022",
+      "question": "What elevation are the old vines grown at, and on what soil type?",
+      "answer": "600 meters, on sandy granitic soils.",
+      "q": 2,
+      "wineId": "m-13"
+    },
+    {
+      "id": "f-051",
+      "category": "red",
+      "wine": "Garnacha, 'El Mentridano' — Vitícola Mentridana, 2022",
+      "question": "Whose vineyards does this project continue, and who runs it today?",
+      "answer": "Continues the vineyards of Daniel Landi of Comando G; run today by his childhood friend, Curro Barreño.",
+      "q": 3,
+      "wineId": "m-13"
+    },
+    {
+      "id": "f-052",
+      "category": "red",
+      "wine": "Garnacha, 'El Mentridano' — Vitícola Mentridana, 2022",
+      "question": "How does this bottling compare to the estate's higher-end cuvées?",
+      "answer": "It's more accessible and drinkable than the higher-altitude Las Uvas de la Ira (850m) and the single-vineyard Cantos del Diablo.",
+      "q": 4,
+      "wineId": "m-13"
+    },
+    {
+      "id": "f-053",
+      "category": "red",
+      "wine": "Pinot Noir, 'Les Montroziers' Nuits-Saint-Georges — Faiveley, 2022",
+      "question": "What grape is this wine made from, and what neighboring village's style does it lean toward?",
+      "answer": "100% Pinot Noir; it leans toward the elegance of neighboring Vosne-Romanée rather than typical Nuits-Saint-Georges.",
+      "q": 1,
+      "wineId": "m-14"
+    },
+    {
+      "id": "f-054",
+      "category": "red",
+      "wine": "Pinot Noir, 'Les Montroziers' Nuits-Saint-Georges — Faiveley, 2022",
+      "question": "How many hectares does Faiveley farm in total, and how many Grands Crus do they own?",
+      "answer": "120 hectares, including 12 Grands Crus.",
+      "q": 2,
+      "wineId": "m-14"
+    },
+    {
+      "id": "f-055",
+      "category": "red",
+      "wine": "Pinot Noir, 'Les Montroziers' Nuits-Saint-Georges — Faiveley, 2022",
+      "question": "What two previously separate parcel bottlings now make up this single cuvée?",
+      "answer": "Aux Lavières and Les Argillats.",
+      "q": 3,
+      "wineId": "m-14"
+    },
+    {
+      "id": "f-056",
+      "category": "red",
+      "wine": "Pinot Noir, 'Les Montroziers' Nuits-Saint-Georges — Faiveley, 2022",
+      "question": "What two critic scores has this wine received?",
+      "answer": "91 points from Wine Advocate and 92 points from Jasper Morris.",
+      "q": 4,
+      "wineId": "m-14"
+    },
+    {
+      "id": "f-057",
+      "category": "red",
+      "wine": "Châteauneuf-du-Pape, 'Ancien Domaine de Pontifès' — Croze-Granier, 2023",
+      "question": "What two grapes make up this wine, and roughly what percentage of each?",
+      "answer": "~80% Grenache, ~20% Mourvèdre.",
+      "q": 1,
+      "wineId": "m-15"
+    },
+    {
+      "id": "f-058",
+      "category": "red",
+      "wine": "Châteauneuf-du-Pape, 'Ancien Domaine de Pontifès' — Croze-Granier, 2023",
+      "question": "What does the estate's name, \"Ancien Domaine des Pontifes,\" historically reference?",
+      "answer": "The property's historic ties to the Avignon papacy.",
+      "q": 2,
+      "wineId": "m-15"
+    },
+    {
+      "id": "f-059",
+      "category": "red",
+      "wine": "Châteauneuf-du-Pape, 'Ancien Domaine de Pontifès' — Croze-Granier, 2023",
+      "question": "Where is the cellar located, and what unique feature gives it thermal stability?",
+      "answer": "Roquemaure, built into a stone cliff (L'Escatillon).",
+      "q": 3,
+      "wineId": "m-15"
+    },
+    {
+      "id": "f-060",
+      "category": "red",
+      "wine": "Châteauneuf-du-Pape, 'Ancien Domaine de Pontifès' — Croze-Granier, 2023",
+      "question": "Since what year has this family produced wine here, and what generation are they on?",
+      "answer": "Since 1895 — 5th generation.",
+      "q": 4,
+      "wineId": "m-15"
+    },
+    {
+      "id": "f-061",
+      "category": "red",
+      "wine": "Bordeaux — Vieux Château Champs de Mars, 2003",
+      "question": "What two grapes make up this wine, and roughly what percentage of each?",
+      "answer": "80% Merlot, 20% Cabernet Franc.",
+      "q": 1,
+      "wineId": "m-16"
+    },
+    {
+      "id": "f-062",
+      "category": "red",
+      "wine": "Bordeaux — Vieux Château Champs de Mars, 2003",
+      "question": "What made 2003 a distinctive vintage across France, and how did Merlot respond on the right bank?",
+      "answer": "2003 was the heat-wave vintage across France; Merlot handled the extreme heat well, producing concentrated, plush wines.",
+      "q": 2,
+      "wineId": "m-16"
+    },
+    {
+      "id": "f-063",
+      "category": "red",
+      "wine": "Bordeaux — Vieux Château Champs de Mars, 2003",
+      "question": "Who founded this estate, and what winemaking philosophy did he pioneer at a time when Bordeaux was moving the opposite direction?",
+      "answer": "Régis Moro, in the early 1980s; he farmed organically and used low-intervention cellar work.",
+      "q": 3,
+      "wineId": "m-16"
+    },
+    {
+      "id": "f-064",
+      "category": "red",
+      "wine": "Bordeaux — Vieux Château Champs de Mars, 2003",
+      "question": "What neighboring, well-known estate shares a philosophy and friendship with this one?",
+      "answer": "Château Le Puy — whose owners, the Amoreau family, eventually acquired Champs de Mars.",
+      "q": 4,
+      "wineId": "m-16"
+    },
+    {
+      "id": "f-065",
+      "category": "red",
+      "wine": "Tempranillo, 'Senda del Oro' — Vizcarra, 2024",
+      "question": "What grape is this wine made from, and what is its local Ribera del Duero name?",
+      "answer": "100% Tempranillo, locally called Tinto Fino.",
+      "q": 1,
+      "wineId": "m-17"
+    },
+    {
+      "id": "f-066",
+      "category": "red",
+      "wine": "Tempranillo, 'Senda del Oro' — Vizcarra, 2024",
+      "question": "What elevation and subzone is this vineyard located in, within Ribera del Duero?",
+      "answer": "Mambrilla de Castrejón, in the Burgos subzone — the highest and coolest part of the region, at 800–850m.",
+      "q": 2,
+      "wineId": "m-17"
+    },
+    {
+      "id": "f-067",
+      "category": "red",
+      "wine": "Tempranillo, 'Senda del Oro' — Vizcarra, 2024",
+      "question": "What adjustments did the winemakers make for the warm 2024 vintage, and why?",
+      "answer": "They picked earlier and used shorter macerations to preserve freshness and acidity.",
+      "q": 3,
+      "wineId": "m-17"
+    },
+    {
+      "id": "f-068",
+      "category": "red",
+      "wine": "Tempranillo, 'Senda del Oro' — Vizcarra, 2024",
+      "question": "Who runs this estate today?",
+      "answer": "A father-daughter team — Juan Carlos Vizcarra and his daughter Celia.",
+      "q": 4,
+      "wineId": "m-17"
+    },
+    {
+      "id": "f-069",
+      "category": "dessert",
+      "wine": "Rivesaltes Ambré — Domaine de Rancy, 2000",
+      "question": "What grape is this wine made from, and how does it develop its deep amber color?",
+      "answer": "100% Macabeu; the amber color and dried-fruit, caramel character come from 21 years of deliberate barrel oxidation.",
+      "q": 1,
+      "wineId": "m-18"
+    },
+    {
+      "id": "f-070",
+      "category": "dessert",
+      "wine": "Rivesaltes Ambré — Domaine de Rancy, 2000",
+      "question": "What French winemaking technique stops fermentation and preserves the wine's natural sweetness?",
+      "answer": "Mutage — fortifying the wine with neutral grape spirit partway through fermentation to kill the yeast.",
+      "q": 2,
+      "wineId": "m-18"
+    },
+    {
+      "id": "f-071",
+      "category": "dessert",
+      "wine": "Rivesaltes Ambré — Domaine de Rancy, 2000",
+      "question": "What makes Domaine de Rancy unusual among Roussillon producers?",
+      "answer": "They're one of only a handful of estates still making traditional Ambré-style Rivesaltes, deliberately aging the wine oxidatively for decades.",
+      "q": 3,
+      "wineId": "m-18"
+    },
+    {
+      "id": "f-072",
+      "category": "dessert",
+      "wine": "Rivesaltes Ambré — Domaine de Rancy, 2000",
+      "question": "How long was this specific wine aged before bottling?",
+      "answer": "21 years in oak, bottled in 2021.",
+      "q": 4,
+      "wineId": "m-18"
+    },
+    {
+      "id": "f-073",
+      "category": "dessert",
+      "wine": "Sauternes — Château Rieussec, 2009",
+      "question": "What three grapes make up this Sauternes, and which one dominates?",
+      "answer": "~90% Sémillon, ~7% Sauvignon Blanc, ~3% Muscadelle — Sémillon-dominant.",
+      "q": 1,
+      "wineId": "m-19"
+    },
+    {
+      "id": "f-074",
+      "category": "dessert",
+      "wine": "Sauternes — Château Rieussec, 2009",
+      "question": "What natural phenomenon gives Sauternes its concentrated sweetness?",
+      "answer": "Botrytis cinerea, or \"noble rot,\" which shrivels the grapes and concentrates their sugar.",
+      "q": 2,
+      "wineId": "m-19"
+    },
+    {
+      "id": "f-075",
+      "category": "dessert",
+      "wine": "Sauternes — Château Rieussec, 2009",
+      "question": "Who owns Château Rieussec today, and how prestigious is the estate within Sauternes?",
+      "answer": "Domaines Baron de Rothschild (Lafite), since 1984; it's one of the largest and most prestigious Sauternes estates, second only to Château d'Yquem.",
+      "q": 3,
+      "wineId": "m-19"
+    },
+    {
+      "id": "f-076",
+      "category": "dessert",
+      "wine": "Sauternes — Château Rieussec, 2009",
+      "question": "How is the fruit harvested to capture the right level of botrytis?",
+      "answer": "Pickers make several passes (tries) through the vineyard over 6–8 weeks, hand-selecting only individually shriveled berries.",
+      "q": 4,
+      "wineId": "m-19"
+    },
+    {
+      "id": "f-077",
+      "category": "dessert",
+      "wine": "Sauternes — Château d'Yquem, 1999",
+      "question": "What two grapes make up this wine, and roughly what percentage of each?",
+      "answer": "~80% Sémillon, ~20% Sauvignon Blanc.",
+      "q": 1,
+      "wineId": "m-20"
+    },
+    {
+      "id": "f-078",
+      "category": "dessert",
+      "wine": "Sauternes — Château d'Yquem, 1999",
+      "question": "How much wine does a single Yquem vine typically produce?",
+      "answer": "About one glass.",
+      "q": 2,
+      "wineId": "m-20"
+    },
+    {
+      "id": "f-079",
+      "category": "dessert",
+      "wine": "Sauternes — Château d'Yquem, 1999",
+      "question": "What company acquired Château d'Yquem, and in what year — the same year as this vintage?",
+      "answer": "LVMH, in 1999.",
+      "q": 3,
+      "wineId": "m-20"
+    },
+    {
+      "id": "f-080",
+      "category": "dessert",
+      "wine": "Sauternes — Château d'Yquem, 1999",
+      "question": "What happens in vintages where botrytis and ripeness don't align?",
+      "answer": "No Grand Vin is made at all — the crop is sold off anonymously to other producers.",
+      "q": 4,
+      "wineId": "m-20"
+    },
+    {
+      "id": "f-081",
+      "category": "dessert",
+      "wine": "Pineau des Charentes, 'Très Vieux' — Lhéraud, 1962",
+      "question": "What grape is this wine primarily made from?",
+      "answer": "Ugni Blanc.",
+      "q": 1,
+      "wineId": "m-21"
+    },
+    {
+      "id": "f-082",
+      "category": "dessert",
+      "wine": "Pineau des Charentes, 'Très Vieux' — Lhéraud, 1962",
+      "question": "What makes a Pineau des Charentes different from a fermented wine like Sauternes or Rivesaltes?",
+      "answer": "It's a mistelle — fresh grape must is blended with Cognac before fermentation ever starts, rather than stopped partway through.",
+      "q": 2,
+      "wineId": "m-21"
+    },
+    {
+      "id": "f-083",
+      "category": "dessert",
+      "wine": "Pineau des Charentes, 'Très Vieux' — Lhéraud, 1962",
+      "question": "How long has the Lhéraud family farmed in the Charente region?",
+      "answer": "Since 1680.",
+      "q": 3,
+      "wineId": "m-21"
+    },
+    {
+      "id": "f-084",
+      "category": "dessert",
+      "wine": "Pineau des Charentes, 'Très Vieux' — Lhéraud, 1962",
+      "question": "What does \"Très Vieux\" mean, and how does this bottling compare?",
+      "answer": "It denotes a legal minimum of 10 years aged; this 1962 bottling has rested more than six times that minimum.",
+      "q": 4,
+      "wineId": "m-21"
+    },
+    {
+      "id": "f-085",
+      "category": "dessert",
+      "wine": "30 Year Tawny Port — Kopke",
+      "question": "What three grapes typically make up this Port?",
+      "answer": "Touriga Nacional, Touriga Franca, and Tinta Roriz.",
+      "q": 1,
+      "wineId": "m-22"
+    },
+    {
+      "id": "f-086",
+      "category": "dessert",
+      "wine": "30 Year Tawny Port — Kopke",
+      "question": "What does the \"30 Years\" on the label actually mean?",
+      "answer": "It's the official average age of all the wines blended together — not a single vintage.",
+      "q": 2,
+      "wineId": "m-22"
+    },
+    {
+      "id": "f-087",
+      "category": "dessert",
+      "wine": "30 Year Tawny Port — Kopke",
+      "question": "What makes Kopke historically significant?",
+      "answer": "Founded in 1638, it's recognized as the oldest Port house in the world.",
+      "q": 3,
+      "wineId": "m-22"
+    },
+    {
+      "id": "f-088",
+      "category": "dessert",
+      "wine": "30 Year Tawny Port — Kopke",
+      "question": "How does Tawny Port's aging process differ from Vintage Port's?",
+      "answer": "Tawny ages for decades in oak casks with steady oxygen contact; Vintage Port ages mostly sealed in the bottle.",
+      "q": 4,
+      "wineId": "m-22"
+    },
+    {
+      "id": "f-089",
+      "category": "dessert",
+      "wine": "Vintage Port — Warre's, 1994",
+      "question": "What grapes typically make up this Vintage Port?",
+      "answer": "Touriga Nacional, Touriga Franca, Tinta Roriz, and Tinto Cão.",
+      "q": 1,
+      "wineId": "m-23"
+    },
+    {
+      "id": "f-090",
+      "category": "dessert",
+      "wine": "Vintage Port — Warre's, 1994",
+      "question": "What makes a Vintage Port different from a Tawny?",
+      "answer": "It's declared only in the best years and matures mostly in the bottle, not in wood.",
+      "q": 2,
+      "wineId": "m-23"
+    },
+    {
+      "id": "f-091",
+      "category": "dessert",
+      "wine": "Vintage Port — Warre's, 1994",
+      "question": "How was 1994 regarded as a Port vintage?",
+      "answer": "It was widely and enthusiastically \"declared\" — Wine Spectator called it one of the best of the 20th century.",
+      "q": 3,
+      "wineId": "m-23"
+    },
+    {
+      "id": "f-092",
+      "category": "dessert",
+      "wine": "Vintage Port — Warre's, 1994",
+      "question": "What house produces this wine, and what's distinctive about its style?",
+      "answer": "Warre's, the oldest British Port house (founded 1670), known for a drier, more structured style.",
+      "q": 4,
+      "wineId": "m-23"
+    },
+    {
+      "id": "f-093",
+      "category": "dessert",
+      "wine": "Boston Bual — The Rare Wine Co.",
+      "question": "What two grapes make up this Madeira, and in what proportion?",
+      "answer": "85% Bual, 15% very old Tinta Negra Mole.",
+      "q": 1,
+      "wineId": "m-24"
+    },
+    {
+      "id": "f-094",
+      "category": "dessert",
+      "wine": "Boston Bual — The Rare Wine Co.",
+      "question": "What aging method gives this wine its complexity, and how does it differ from cheaper Madeira production?",
+      "answer": "The canteiro method — barrels rest in the naturally warm upper floors of the wine lodge over years, rather than being quickly heated in tanks (estufagem).",
+      "q": 2,
+      "wineId": "m-24"
+    },
+    {
+      "id": "f-095",
+      "category": "dessert",
+      "wine": "Boston Bual — The Rare Wine Co.",
+      "question": "Why is this wine named \"Boston\"?",
+      "answer": "It's part of a series honoring American port cities where Madeira was historically popular — Boston favored sweeter styles like Bual.",
+      "q": 3,
+      "wineId": "m-24"
+    },
+    {
+      "id": "f-096",
+      "category": "dessert",
+      "wine": "Boston Bual — The Rare Wine Co.",
+      "question": "Why is old Tinta Negra Mole blended into an otherwise Bual wine?",
+      "answer": "To lend the depth and complexity of a true vintage Madeira to an otherwise non-vintage bottling.",
+      "q": 4,
+      "wineId": "m-24"
+    },
+    {
+      "id": "f-097",
+      "category": "dessert",
+      "wine": "Sercial Reserva Velha — Barbeito, 1898",
+      "question": "What grape is this wine made from, and what makes it the driest Madeira style?",
+      "answer": "100% Sercial — grown at high elevation for maximum acidity, producing Madeira's driest, most age-worthy wines.",
+      "q": 1,
+      "wineId": "m-25"
+    },
+    {
+      "id": "f-098",
+      "category": "dessert",
+      "wine": "Sercial Reserva Velha — Barbeito, 1898",
+      "question": "What Portuguese term describes this wine's natural, decades-long aging process?",
+      "answer": "Canteiro — barrels are moved through the lodge to experience natural seasonal warmth and cooling.",
+      "q": 2,
+      "wineId": "m-25"
+    },
+    {
+      "id": "f-099",
+      "category": "dessert",
+      "wine": "Sercial Reserva Velha — Barbeito, 1898",
+      "question": "What does it mean for a Madeira to be classified as a \"Frasqueira\"?",
+      "answer": "A single-vintage, single-grape wine legally required to age at least 20 years before release.",
+      "q": 3,
+      "wineId": "m-25"
+    },
+    {
+      "id": "f-100",
+      "category": "dessert",
+      "wine": "Sercial Reserva Velha — Barbeito, 1898",
+      "question": "What is unusual about Barbeito's approach to color in their wines?",
+      "answer": "They never add caramel coloring — the deep amber-gold color here comes entirely from over a century of real aging.",
+      "q": 4,
+      "wineId": "m-25"
+    },
+    {
+      "id": "f-101",
+      "category": "dessert",
+      "wine": "Bual Solera — Cossart Gordon, 1845",
+      "question": "What grape is this wine made from?",
+      "answer": "100% Bual (Boal).",
+      "q": 1,
+      "wineId": "m-26"
+    },
+    {
+      "id": "f-102",
+      "category": "dessert",
+      "wine": "Bual Solera — Cossart Gordon, 1845",
+      "question": "What is a \"solera,\" and how does it apply to this wine?",
+      "answer": "A fractional blending system where wine is periodically drawn off and replaced with younger wine — so a trace of the founding 1845 vintage still runs through every bottle.",
+      "q": 2,
+      "wineId": "m-26"
+    },
+    {
+      "id": "f-103",
+      "category": "dessert",
+      "wine": "Bual Solera — Cossart Gordon, 1845",
+      "question": "Why was this solera originally created in 1875?",
+      "answer": "To help cope with the wine shortage caused by the Phylloxera epidemic.",
+      "q": 3,
+      "wineId": "m-26"
+    },
+    {
+      "id": "f-104",
+      "category": "dessert",
+      "wine": "Bual Solera — Cossart Gordon, 1845",
+      "question": "What distinction does Cossart Gordon hold in the Madeira trade?",
+      "answer": "Founded in 1745, it's the oldest company in the Madeira trade.",
+      "q": 4,
+      "wineId": "m-26"
+    },
+    {
+      "id": "f-105",
+      "category": "dessert",
+      "wine": "Malvasia Reserva Velha — Barbeito, 1834",
+      "question": "What grape is this wine made from, and what style does it represent?",
+      "answer": "100% Malvasia (Malmsey) — the richest and sweetest of Madeira's classic grapes.",
+      "q": 1,
+      "wineId": "m-27"
+    },
+    {
+      "id": "f-106",
+      "category": "dessert",
+      "wine": "Malvasia Reserva Velha — Barbeito, 1834",
+      "question": "How does this wine differ from the Cossart Gordon Solera in terms of what's actually in the bottle?",
+      "answer": "This is a true Frasqueira — entirely 1834 fruit, with nothing blended in or refreshed, unlike a solera.",
+      "q": 2,
+      "wineId": "m-27"
+    },
+    {
+      "id": "f-107",
+      "category": "dessert",
+      "wine": "Malvasia Reserva Velha — Barbeito, 1834",
+      "question": "Roughly how old is this wine?",
+      "answer": "Nearly two centuries old, from 1834.",
+      "q": 3,
+      "wineId": "m-27"
+    },
+    {
+      "id": "f-108",
+      "category": "dessert",
+      "wine": "Malvasia Reserva Velha — Barbeito, 1834",
+      "question": "What family still runs the estate that produced this wine?",
+      "answer": "The de Vasconcelos family, who founded Vinhos Barbeito.",
+      "q": 4,
+      "wineId": "m-27"
+    },
+    {
+      "id": "f-109",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "What two meats form the base of the pâté de campagne?",
+      "answer": "Pork shoulder and chicken liver.",
+      "q": 1
+    },
+    {
+      "id": "f-110",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "Name four of the spices used to season the pâté.",
+      "answer": "Any four of: onion, garlic, thyme, black and white pepper, chili flake, clove, nutmeg, juniper.",
+      "q": 2
+    },
+    {
+      "id": "f-111",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "How is the pâté cooked?",
+      "answer": "Browned, then baked low and slow in a water bath so it steams through, then chilled and sliced.",
+      "q": 3
+    },
+    {
+      "id": "f-112",
+      "wineId": "d-01",
+      "category": "charcuterie",
+      "wine": "Pâté de campagne, pork and chicken liver terrine",
+      "question": "What is the pâté served with, and what's in the carrot salad?",
+      "answer": "Cornichons, Dijon mustard, and a carrot salad of raw carrot, Dijon, lemon juice, olive oil, and chopped parsley.",
+      "q": 4
+    },
+    {
+      "id": "f-113",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "Where does the foie gras come from?",
+      "answer": "Hudson Valley.",
+      "q": 1
+    },
+    {
+      "id": "f-114",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What is the foie gras marinated in overnight?",
+      "answer": "Salt, sugar, pepper, and Cognac.",
+      "q": 2
+    },
+    {
+      "id": "f-115",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What happens to the foie gras after marinating?",
+      "answer": "It's molded into torchons, steamed, pressed into terrines, then chilled and sliced.",
+      "q": 3
+    },
+    {
+      "id": "f-116",
+      "wineId": "d-02",
+      "category": "charcuterie",
+      "wine": "Foie gras terrine maison, confit de figues à l'orange",
+      "question": "What is the seasonal poached fruit poached in?",
+      "answer": "White wine, sugar, water, cinnamon stick, cloves, and black pepper.",
+      "q": 4
+    },
+    {
+      "id": "f-117",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What two spices season the seared bluefin tuna?",
+      "answer": "Sarawak pepper and coriander.",
+      "q": 1
+    },
+    {
+      "id": "f-118",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What beans are in the dish besides fava beans?",
+      "answer": "Butter beans.",
+      "q": 2
+    },
+    {
+      "id": "f-119",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What's in the sauce verte?",
+      "answer": "Parsley, chervil, and green garlic.",
+      "q": 3
+    },
+    {
+      "id": "f-120",
+      "wineId": "d-04",
+      "category": "entrees",
+      "wine": "Bluefin tuna, fava beans, Basque peppers, sauce verte",
+      "question": "What is the dish topped with, and what are its dietary properties?",
+      "answer": "Topped with red mustard; it's gluten-free and dairy-free.",
+      "q": 4
+    },
+    {
+      "id": "f-121",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What color endive is used?",
+      "answer": "Red endive.",
+      "q": 1
+    },
+    {
+      "id": "f-122",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "How are the walnuts prepared?",
+      "answer": "Toasted in olive oil and honey.",
+      "q": 2
+    },
+    {
+      "id": "f-123",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What fruit besides apple is tossed into the salad?",
+      "answer": "Asian pear.",
+      "q": 3
+    },
+    {
+      "id": "f-124",
+      "wineId": "d-06",
+      "category": "entrees",
+      "wine": "Endive, walnuts, apples, Fourme d'Ambert",
+      "question": "What is Fourme d'Ambert, and where is it from?",
+      "answer": "A rich, creamy cow's milk blue cheese from the Auvergne region of France.",
+      "q": 4
+    },
+    {
+      "id": "f-125",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "Where does the beef come from?",
+      "answer": "Happy Valley in Pennsylvania.",
+      "q": 1
+    },
+    {
+      "id": "f-126",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "What cut of beef is used?",
+      "answer": "Sirloin.",
+      "q": 2
+    },
+    {
+      "id": "f-127",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "Name four ingredients mixed into the hand-chopped beef.",
+      "answer": "Any four of: sea salt, chili flake, espelette, Worcestershire, olive oil, shallot, capers, chives, lemon zest, lemon juice, red wine vinegar, Dijon mustard, egg yolk.",
+      "q": 3
+    },
+    {
+      "id": "f-128",
+      "wineId": "d-08",
+      "category": "entrees",
+      "wine": "Tartare de boeuf Classique",
+      "question": "What is the tartare served with?",
+      "answer": "Housemade potato chips.",
+      "q": 4
+    },
+    {
+      "id": "f-129",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What kind of crab is used, and where is it from?",
+      "answer": "Jonah crab from Maine.",
+      "q": 1
+    },
+    {
+      "id": "f-130",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is the crab cooked with?",
+      "answer": "Onion, leek, shallot, tomato paste, tomatoes, white wine, chili flake, pimentón, and fish stock.",
+      "q": 2
+    },
+    {
+      "id": "f-131",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is the dish finished with?",
+      "answer": "Fromage blanc, butter, chives, and breadcrumbs.",
+      "q": 3
+    },
+    {
+      "id": "f-132",
+      "wineId": "d-09",
+      "category": "entrees",
+      "wine": "Txangurro, Basque deviled crab",
+      "question": "What is Txangurro served with?",
+      "answer": "Crostini.",
+      "q": 4
+    },
+    {
+      "id": "f-133",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "Where does the beef come from?",
+      "answer": "Highland Hollow in Schoharie, New York.",
+      "q": 1
+    },
+    {
+      "id": "f-134",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "What size is the filet, and what temperature is it cooked to?",
+      "answer": "7 oz, cooked medium rare (other temperatures available up to medium well).",
+      "q": 2
+    },
+    {
+      "id": "f-135",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "Name four ingredients in the sauce.",
+      "answer": "Any four of: shallot, Cognac, meat jus, cream, Dijon mustard, black and green peppercorn, butter, Worcestershire.",
+      "q": 3
+    },
+    {
+      "id": "f-136",
+      "wineId": "d-13",
+      "category": "plats",
+      "wine": "Filet mignon au poivre, frites maison",
+      "question": "What does the filet mignon come with?",
+      "answer": "Frites.",
+      "q": 4
+    },
+    {
+      "id": "f-137",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "Where do the chickens come from, and how are they prepped before cooking?",
+      "answer": "Golden chickens from Pennsylvania, air-dried in the fridge for 48 hours.",
+      "q": 1
+    },
+    {
+      "id": "f-138",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "What is the chicken cavity rubbed with?",
+      "answer": "Crushed garlic, olive oil, black pepper, thyme, rosemary, marjoram, and herbes de Provence.",
+      "q": 2
+    },
+    {
+      "id": "f-139",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "What are the chickens brushed with while roasting, and what's in the sauce?",
+      "answer": "Brushed with foie fat; the sauce is chicken jus, foie gras, and Cabernet vinegar.",
+      "q": 3
+    },
+    {
+      "id": "f-140",
+      "wineId": "d-14",
+      "category": "plats",
+      "wine": "Poulet rôti, pommes Fifi, salade verte",
+      "question": "How is the chicken served, and what does it come with?",
+      "answer": "Carved into boneless sliced breast, thigh, drumstick, and wing, served with pommes Fifi and salade verte.",
+      "q": 4
+    },
+    {
+      "id": "f-141",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "Where is the Dover sole from, and how does it differ from farm-raised sole?",
+      "answer": "Wild Portuguese Dover sole, with a more muscular texture than farm-raised sole.",
+      "q": 1
+    },
+    {
+      "id": "f-142",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "How is the sole cooked?",
+      "answer": "Dredged in flour and seared on the plancha on both sides until golden.",
+      "q": 2
+    },
+    {
+      "id": "f-143",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "What's in the sauce?",
+      "answer": "Shallot, white wine, chicken stock, a touch of brown butter, capers, parsley, and lemon juice.",
+      "q": 3
+    },
+    {
+      "id": "f-144",
+      "wineId": "d-15",
+      "category": "plats",
+      "wine": "Wild Dover sole à la plancha, courgettes, cherry tomatoes",
+      "question": "What is the fish sauced with, and what's in it?",
+      "answer": "A poireaux vinaigrette made of blanched leeks, Dijon, red wine vinegar, lemon juice, and olive oil.",
+      "q": 4
+    },
+    {
+      "id": "f-145",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "How is the ribeye seasoned and cooked?",
+      "answer": "Seasoned with salt and pepper, seared in cast iron, then finished over charcoal.",
+      "q": 1
+    },
+    {
+      "id": "f-146",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "How many beef purveyors does Chez Fifi work with for this dish?",
+      "answer": "Three.",
+      "q": 2
+    },
+    {
+      "id": "f-147",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "Which purveyor supplies Holstein beef dry-aged 14 days?",
+      "answer": "Flannery Beef, in Sonoma, CA.",
+      "q": 3
+    },
+    {
+      "id": "f-148",
+      "wineId": "d-16",
+      "category": "plats",
+      "wine": "Côte de boeuf, frites maison, poivrons marinés",
+      "question": "What makes Happy Valley's beef \"vintage,\" and how is it aged?",
+      "answer": "It comes from breeding/dairy cows raised 5–7 years before slaughter, then aged about three weeks (a 21-day dry age).",
+      "q": 4
+    },
+    {
+      "id": "f-149",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What acid and fat dress the greens?",
+      "answer": "Lemon juice and olive oil (plus lemon zest).",
+      "q": 1
+    },
+    {
+      "id": "f-150",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What mustard and vinegar are used?",
+      "answer": "Dijon mustard and Chardonnay vinegar.",
+      "q": 2
+    },
+    {
+      "id": "f-151",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "Name three herbs tossed into the greens besides shallot.",
+      "answer": "Parsley, chives, and tarragon.",
+      "q": 3
+    },
+    {
+      "id": "f-152",
+      "wineId": "d-17",
+      "category": "accompagnements",
+      "wine": "Salade verte",
+      "question": "What's a good way to serve this dish besides as a side?",
+      "answer": "Also great as an app.",
+      "q": 4
+    },
+    {
+      "id": "f-153",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "How are the potatoes cooked before frying?",
+      "answer": "Boiled.",
+      "q": 1
+    },
+    {
+      "id": "f-154",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What are the potatoes tossed in after frying?",
+      "answer": "Garlic parsley butter.",
+      "q": 2
+    },
+    {
+      "id": "f-155",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What allergens does this dish contain?",
+      "answer": "Dairy and allium.",
+      "q": 3
+    },
+    {
+      "id": "f-156",
+      "wineId": "d-19",
+      "category": "accompagnements",
+      "wine": "Pommes Fifi",
+      "question": "What substitutions are available?",
+      "answer": "No dairy, no allium.",
+      "q": 4
+    },
+    {
+      "id": "f-157",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "How are the potatoes prepared before frying?",
+      "answer": "Cut, soaked, and blanched.",
+      "q": 1
+    },
+    {
+      "id": "f-158",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "How are they fried and seasoned?",
+      "answer": "Fried until crisp, seasoned with sea salt.",
+      "q": 2
+    },
+    {
+      "id": "f-159",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "Is this dish gluten-free?",
+      "answer": "Yes.",
+      "q": 3
+    },
+    {
+      "id": "f-160",
+      "wineId": "d-20",
+      "category": "accompagnements",
+      "wine": "Frites maison",
+      "question": "What's the caviar upgrade, and what does it cost?",
+      "answer": "Au Osetra caviar, for an additional $30.",
+      "q": 4
+    },
+    {
+      "id": "f-161",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What four base ingredients make up the custard?",
+      "answer": "Cream, sugar, salt, and vanilla bean (plus eggs).",
+      "q": 1
+    },
+    {
+      "id": "f-162",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "How is the custard finished?",
+      "answer": "Chilled, then bruléed with sugar on top.",
+      "q": 2
+    },
+    {
+      "id": "f-163",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What allergens does this dessert contain?",
+      "answer": "Dairy and egg.",
+      "q": 3
+    },
+    {
+      "id": "f-164",
+      "wineId": "d-22",
+      "category": "desserts",
+      "wine": "Crème brûlée",
+      "question": "What vessel is the custard set into?",
+      "answer": "Gratins.",
+      "q": 4
+    },
+    {
+      "id": "f-165",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "What four ingredients make up the ice cream base?",
+      "answer": "Milk, sugar, salt, and fromage blanc.",
+      "q": 1
+    },
+    {
+      "id": "f-166",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "How many quenelles are served?",
+      "answer": "Two.",
+      "q": 2
+    },
+    {
+      "id": "f-167",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "What is the ice cream served with?",
+      "answer": "Huckleberry jus.",
+      "q": 3
+    },
+    {
+      "id": "f-168",
+      "wineId": "d-23",
+      "category": "desserts",
+      "wine": "Fromage blanc ice cream",
+      "question": "Where are the huckleberries from?",
+      "answer": "Oregon.",
+      "q": 4
+    },
+    {
+      "id": "f-169",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What four ingredients make the ganache?",
+      "answer": "Chocolate, milk, sugar, and egg yolk.",
+      "q": 1
+    },
+    {
+      "id": "f-170",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What's folded into the ganache?",
+      "answer": "A beaten meringue.",
+      "q": 2
+    },
+    {
+      "id": "f-171",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What is the mousse served alongside?",
+      "answer": "Chantilly cream.",
+      "q": 3
+    },
+    {
+      "id": "f-172",
+      "wineId": "d-24",
+      "category": "desserts",
+      "wine": "Chocolate mousse, chantilly",
+      "question": "What's the mousse topped with?",
+      "answer": "Shaved dark chocolate.",
+      "q": 4
+    },
+    {
+      "id": "f-173",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What are the brioche cakes soaked in?",
+      "answer": "Rum syrup.",
+      "q": 1
+    },
+    {
+      "id": "f-174",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What is piped inside the baba?",
+      "answer": "Diplomat cream (whipped cream and pastry cream).",
+      "q": 2
+    },
+    {
+      "id": "f-175",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What's the \"little surprise\" inside?",
+      "answer": "Pineapple jam.",
+      "q": 3
+    },
+    {
+      "id": "f-176",
+      "wineId": "d-25",
+      "category": "desserts",
+      "wine": "Baba au rhum",
+      "question": "What's served alongside the baba au rhum on the table?",
+      "answer": "A bottle of Barbancourt 15-year rum.",
+      "q": 4
+    }
+  ]
+}

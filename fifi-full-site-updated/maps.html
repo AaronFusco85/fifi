@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Wine Region Maps — Chez Fifi</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://maps.googleapis.com">
+<link rel="preconnect" href="https://docs.google.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="css/style.css?v=33">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">Chez Fifi</span>
+    <span class="brand-sub">Staff Education Portal</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Beverage Menu</a>
+    <a href="food-menu.html">Food Menu</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="techniques.html">Techniques</a>
+    <a href="maps.html" class="active">Wine Map</a>
+  </nav>
+</header>
+
+<main>
+  <div class="page-eyebrow">04 — Explore</div>
+  <h1 class="page-title">Wine Region Maps</h1>
+  <p class="page-lede">Click a pin to see which wines come from there — click through to a wine for the full detail card.</p>
+
+  <div id="mapNotice" class="map-notice" hidden>
+    Add your Google Maps API key in <code>js/config.js</code> to activate this map — see README.md for how to get a free key.
+  </div>
+
+  <div id="map" class="map-canvas"></div>
+</main>
+
+<div class="detail-overlay" id="detailOverlay" hidden>
+  <div class="detail-card">
+    <button class="detail-close" id="detailClose" aria-label="Close">×</button>
+    <div class="detail-header">
+      <img class="detail-photo" id="detailPhoto" src="" alt="" onerror="this.style.display='none'">
+      <div class="detail-header-text">
+        <span class="tag" id="detailTag"></span>
+        <div class="detail-producer" id="detailProducer"></div>
+        <h2 id="detailName"></h2>
+        <a class="quiz-me-link" id="detailQuizLink" href="#">Quiz me on this wine →</a>
+      </div>
+    </div>
+    <div class="detail-meta">
+      <div><span class="meta-label">Grape</span><span id="detailGrape"></span></div>
+      <div><span class="meta-label">Region</span><span id="detailRegion"></span></div>
+      <div><span class="meta-label">Glass</span><span id="detailGlass"></span></div>
+      <div><span class="meta-label">Bottle</span><span id="detailBottle"></span></div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Where It's From</div>
+      <div id="detailMiniMap" class="mini-map"></div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-label">Tasting Notes</div>
+      <p id="detailTastingNotes"></p>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-label">Winery Profile</div>
+      <p id="detailWineryProfile"></p>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-label">Farming &amp; Winemaking</div>
+      <p id="detailFarmingWinemaking"></p>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-label">About the Cuvée</div>
+      <p id="detailAboutCuvee"></p>
+    </div>
+    <div class="detail-section">
+      <div class="detail-section-label">Vintage Details</div>
+      <p id="detailVintageDetails"></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">CHEZ FIFI — INTERNAL STAFF RESOURCE — NOT FOR GUEST USE</footer>
+
+<script src="js/config.js?v=18"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.5.4/papaparse.min.js"></script>
+<script src="js/data-source.js?v=21"></script>
+<script src="js/wine-detail.js?v=21"></script>
+<script src="js/maps.js?v=15"></script>
+<script src="js/sw-register.js"></script>
+</body>
+</html>
