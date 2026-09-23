@@ -7,7 +7,7 @@ try {
   console.warn('[sw] Could not load config.js', err);
 }
 
-const CACHE_NAME = 'chez-fifi-cache-v15';
+const CACHE_NAME = 'chez-fifi-cache-v16';
 
 function sheetsUrlsConfigured() {
   return self.WINES_CSV_URL && !self.WINES_CSV_URL.startsWith('PASTE_')
@@ -30,7 +30,8 @@ const PRECACHE_URLS = [
   'data/menu.json',
   'data/flashcards.json',
   'data/regions.json',
-  'resources/pdfs/BTG_Complete_Packet.pdf',
+  'js/btg-pdf.js?v=1',
+  'js/vendor/jspdf.umd.min.js?v=1',
   'favicon.svg?v=3',
   'favicon-32.png?v=3',
   'favicon-192.png?v=3',

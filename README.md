@@ -16,9 +16,11 @@ team-quiz.html           Bonus "Match the Wine to the Team" game
 css/style.css            All styling
 js/config.js              Your Google Maps key + Google Sheets links go here
 js/data-source.js         Loads content from Sheets (falls back to data/ JSON)
+js/btg-pdf.js             Builds the downloadable BTG packet PDF from the Sheet, on click
+js/vendor/                jsPDF library used by btg-pdf.js (bundled so it works offline)
 js/                        Everything else — page logic, shouldn't need to touch
 data/                      Local fallback copies (used only if Sheets is unreachable)
-resources/pdfs/            The downloadable BTG packet PDF lives here
+resources/pdfs/            Old static BTG packet — no longer linked (safe to delete)
 resources/images/          Bottle/dish photos live here
 ```
 
@@ -29,9 +31,10 @@ and **Food**. Edit a cell in the Sheet, and — usually within a few minutes —
 the live site reflects it. No file to edit, no upload, no GitHub for content
 changes.
 
-The one exception is the **downloadable PDF packet**, which is a static file
-and does need to be regenerated and re-uploaded when the wine list changes
-(see "Keeping the PDF in sync" below).
+The **downloadable PDF packet** on the Beverage Menu page is also built from
+the Sheet: each click generates a fresh PDF from the current Wines and
+Flashcards tabs (see "The BTG packet PDF" below), so there is nothing to
+regenerate or re-upload.
 
 ## One-time setup: the Google Sheet
 
@@ -139,7 +142,7 @@ automatically, same as everything else.
 4. If the outgoing wine was the *only* wine on its pin, its `pinLabel` simply
    disappears from the sheet on its own — nothing extra to clean up, since
    pins are derived live from whichever wines currently reference them.
-5. Regenerate and re-upload the PDF (see below).
+5. Nothing to do for the PDF — it rebuilds itself from the Sheet on every download.
 
 ### Adding a wine (no replacement)
 
@@ -153,18 +156,31 @@ pin with other wines, nothing else to do. If it was alone on its pin, that
 pin simply stops appearing — pins are derived automatically from whatever
 wines currently reference them, so there's no separate pin list to maintain.
 
-## Keeping the PDF in sync
+## The BTG packet PDF
 
-The downloadable packet at the bottom of the Beverage Menu is a static file,
-not sheet-driven — it's the one thing that needs a manual regenerate step
-after a content change. Ask Claude to regenerate it from the current wine
-list, then drop the new file into `resources/pdfs/` (same filename, or
-update the link in `menu.html` if you rename it) and upload it.
+The link at the bottom of the Beverage Menu builds the packet **in the browser,
+on demand**, from the live Google Sheet — nothing is stored or uploaded. It
+contains a cover, a summary and full-detail pages for every wine (dessert wines
+in their own section), then the server study guide (questions only) and the
+answer key, all taken from the `Wines` and `Flashcards` tabs.
+
+- **It reflects the Sheet as of the moment you click**, subject to Google's own
+  "Publish to web" delay (usually a few minutes after an edit).
+- **Only wines with flashcards get study-guide entries**, using each wine's
+  cards in `q` order (1 → 4).
+- **If the phone is offline**, it builds from the copy saved on the device and
+  says so on the cover page and on the link.
+- Fields used: `producer`, `name`, `vintage`, `region`, `grape`, prices, and the
+  five detail sections. Blank sections are skipped.
+- The PDF library (`js/vendor/jspdf.umd.min.js`) loads only when someone
+  clicks the link. The file name is `Chez-Fifi-BTG-Packet-YYYY-MM-DD.pdf`.
+
+The old static file in `resources/pdfs/` is no longer linked and can be deleted.
 
 ## Offline use
 
 The site works without a connection after a first visit. A service worker
-(`sw.js`) caches every page, the current Sheets data, and the BTG packet PDF
+(`sw.js`) caches every page, the current Sheets data, and the PDF-building code
 the first time they load over wifi or cell data — after that, the Beverage
 Menu, Flashcards, and Home page keep working with no signal at all.
 
@@ -179,7 +195,7 @@ rather than an error. Not a big deal for a reference tool like this, but
 worth knowing.
 
 If you ever want to force everyone's cache to refresh, bump the version
-number in `sw.js` (`CACHE_NAME = 'chez-fifi-cache-v3'` → `v4`) and re-upload
+number in `sw.js` (`CACHE_NAME = 'chez-fifi-cache-v16'` → `v17`) and re-upload
 it — that tells every phone to fetch fresh copies next time it's online. If
 Sheets ever fails to load entirely (bad URL, sheet unpublished, etc.), the
 site automatically falls back to the bundled `data/*.json` files, so it

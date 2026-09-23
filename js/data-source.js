@@ -9,8 +9,8 @@ window.DataSource = (function () {
     return result.data;
   }
 
-  async function fetchCsv(url) {
-    const res = await fetch(url);
+  async function fetchCsv(url, options) {
+    const res = await fetch(url, options);
     if (!res.ok) throw new Error('CSV fetch failed: ' + res.status);
     const text = await res.text();
     return parseCsv(text);
@@ -122,6 +122,35 @@ window.DataSource = (function () {
     return loadPromise;
   }
 
+  // Like load(), but goes straight to the network for the newest Sheet data
+  // (bypassing the offline cache) — used when building the PDF packet so it
+  // reflects the wine list as it is right now. Returns the usual
+  // { wines, cards, pins } plus source: 'live' | 'cached'. If the network or
+  // Sheet is unreachable it quietly falls back to whatever load() has (the
+  // copy saved on this device), and says so via source: 'cached'.
+  async function loadFresh() {
+    const sheetsReady = csvUrlConfigured(window.WINES_CSV_URL) && csvUrlConfigured(window.FLASHCARDS_CSV_URL);
+    if (sheetsReady) {
+      try {
+        // A throwaway query parameter makes the request unique, so it can't
+        // be answered from the browser or service-worker cache.
+        const bust = (u) => u + (u.indexOf('?') === -1 ? '?' : '&') + 't=' + Date.now();
+        const opts = { cache: 'no-store' };
+        const [wineRows, cardRows] = await Promise.all([
+          fetchCsv(bust(window.WINES_CSV_URL), opts),
+          fetchCsv(bust(window.FLASHCARDS_CSV_URL), opts)
+        ]);
+        const wines = wineRows.map(rowToWine).filter(w => w.id);
+        const cards = cardRows.map(rowToCard).filter(c => c.id);
+        return { wines, cards, pins: derivePins(wines), source: 'live' };
+      } catch (err) {
+        console.warn('[DataSource] Fresh load failed, using saved data:', err);
+      }
+    }
+    const saved = await load();
+    return { wines: saved.wines, cards: saved.cards, pins: saved.pins, source: 'cached' };
+  }
+
   function rowToFood(row) {
     return {
       id: (row.id || '').trim(),
@@ -166,5 +195,5 @@ window.DataSource = (function () {
     return loadFoodPromise;
   }
 
-  return { load, loadFood };
+  return { load, loadFood, loadFresh };
 })();
