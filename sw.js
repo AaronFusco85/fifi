@@ -7,11 +7,15 @@ try {
   console.warn('[sw] Could not load config.js', err);
 }
 
-const CACHE_NAME = 'chez-fifi-cache-v16';
+const CACHE_NAME = 'chez-fifi-cache-v17';
 
 function sheetsUrlsConfigured() {
   return self.WINES_CSV_URL && !self.WINES_CSV_URL.startsWith('PASTE_')
     && self.FLASHCARDS_CSV_URL && !self.FLASHCARDS_CSV_URL.startsWith('PASTE_');
+}
+
+function foodUrlConfigured() {
+  return self.FOOD_CSV_URL && !self.FOOD_CSV_URL.startsWith('PASTE_');
 }
 
 // Pages and data that don't change URL when the site is updated (no cache-
@@ -24,12 +28,15 @@ const PRECACHE_URLS = [
   'index.html',
   'menu.html',
   'flashcards.html',
+  'food-menu.html',
   'techniques.html',
   'maps.html',
   'team-quiz.html',
   'data/menu.json',
   'data/flashcards.json',
+  'data/food.json',
   'data/regions.json',
+  'js/food-menu.js?v=2',
   'js/btg-pdf.js?v=1',
   'js/vendor/jspdf.umd.min.js?v=1',
   'favicon.svg?v=3',
@@ -48,6 +55,7 @@ self.addEventListener('install', (event) => {
       // page has been opened once online.
       if (sheetsUrlsConfigured()) {
         urls.push(self.WINES_CSV_URL, self.FLASHCARDS_CSV_URL);
+        if (foodUrlConfigured()) urls.push(self.FOOD_CSV_URL);
       }
 
       // Cache each file independently — cache.addAll() is all-or-nothing,
@@ -83,7 +91,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
   const isSheetsRequest = sheetsUrlsConfigured()
-    && (event.request.url === self.WINES_CSV_URL || event.request.url === self.FLASHCARDS_CSV_URL);
+    && (event.request.url === self.WINES_CSV_URL || event.request.url === self.FLASHCARDS_CSV_URL
+        || (foodUrlConfigured() && event.request.url === self.FOOD_CSV_URL));
   // Bottle photo links can point anywhere (producer sites, retailers,
   // etc.) — cache image requests opportunistically regardless of domain,
   // same idea as the Sheets data, so photos you've already viewed once
